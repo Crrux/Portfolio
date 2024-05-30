@@ -1,8 +1,8 @@
 function Header() {
   return (
-    <main className="Header">
+    <header className="Header">
       <h1>header</h1>
-    </main>
+    </header>
   );
 }
 
