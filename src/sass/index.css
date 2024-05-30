@@ -1,20 +1,27 @@
-.logo {
-  height: 4em;
+.Home .HomeReactProgress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6666666667));
-  cursor: pointer;
-}
-
-#test {
-  height: 10px;
+.Home .HomeReactProgress .logo {
+  height: 100%;
+  margin-right: 0.2rem;
 }
 
-.bg-test {
-  background-color: rgba(97, 218, 251, 0.6666666667);
+.ProgressBar {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 2rem;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+}
+.ProgressBarValue {
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 4px;
 }
 
 :root {
