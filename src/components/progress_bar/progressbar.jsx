@@ -19,7 +19,7 @@ function ProgressBar({ progress, color }) {
 }
 
 ProgressBar.propTypes = {
-  progress: PropTypes.number.isRequired,
+  progress: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
 };
 
