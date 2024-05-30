@@ -7,8 +7,8 @@ import "./sass/index.css";
 import Header from "./layout/Header/header.jsx";
 import Footer from "./layout/Footer/footer.jsx";
 
-import Home from "./pages/Home/Home.jsx";
-import Error from "./pages/Error/Error.jsx";
+import Home from "./pages/Home/home.jsx";
+import Error from "./pages/Error/error.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
