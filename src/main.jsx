@@ -5,7 +5,7 @@ import "primereact/resources/themes/lara-dark-teal/theme.css";
 
 import "./sass/index.css";
 
-import Home from "./pages/Home/home.jsx";
+import Home from "./pages/Home/Home.jsx";
 import ContactForm from "./pages/ContactForm/ContactForm.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
