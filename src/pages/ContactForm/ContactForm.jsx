@@ -12,7 +12,7 @@ function Form() {
     );
   }
   return (
-    <>
+    <main className="mainContact">
       <form onSubmit={handleSubmit} className="ContactForm">
         <label htmlFor="email">Email Address</label>
         <input id="email" type="email" name="email" />
@@ -28,7 +28,7 @@ function Form() {
           Submit
         </button>
       </form>
-    </>
+    </main>
   );
 }
 
