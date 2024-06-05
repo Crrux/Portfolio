@@ -5,13 +5,12 @@ import cssLogo from "/assets/css_logo.svg";
 import sassLogo from "/assets/sass_logo.svg";
 import gitLogo from "/assets/git_logo.svg";
 import githubLogo from "/assets/github_logo.svg";
-import githubIcon from "/assets/github-icon.svg";
+
 import mongodbLogo from "/assets/mongodb_logo.svg";
 import nodejsLogo from "/assets/nodejs_logo.svg";
 import photo from "/assets/photo.jpg";
 
 import ProgressBar from "../../components/progress_bar/progressbar";
-import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -20,15 +19,6 @@ function Home() {
         <div className="Home_Presentation">
           <img src={photo} className="Home_Presentation_Photo" />
           <div>
-            <div className="Home_Presentation_Header">
-              <Link to={"/contact"}>contact</Link>
-              <a href="https://github.com/Crrux">
-                <img
-                  src={githubIcon}
-                  className="Home_Presentation_Header_GithubLogo"
-                />
-              </a>
-            </div>
             <h1>Welcome.</h1>
             <p>
               My name is Mursch Arthur and i&apos;m a fullstack web developper
@@ -37,7 +27,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="Home_Knowledge">
+      <section className="Home_Knowledge" style={{ display: "none" }}>
         <div className="Progress HomeHTMLProgress">
           <img src={htmlLogo} className="logo html" alt="HTML logo" />
           <ProgressBar progress="80" color="f44336"></ProgressBar>

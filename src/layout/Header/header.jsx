@@ -1,7 +1,15 @@
+import githubIcon from "/assets/github-icon.svg";
+
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header className="Header">
-      <h1>header</h1>
+      <Link to={"/"}>Home</Link>
+      <Link to={"/contact"}>Contact</Link>
+      <a href="https://github.com/Crrux">
+        <img src={githubIcon} className="Header_GithubLogo" />
+      </a>
     </header>
   );
 }
