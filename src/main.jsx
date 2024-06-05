@@ -5,21 +5,16 @@ import "primereact/resources/themes/lara-dark-teal/theme.css";
 
 import "./sass/index.css";
 
-import Header from "./layout/Header/header.jsx";
-import Footer from "./layout/Footer/footer.jsx";
-
 import Home from "./pages/Home/home.jsx";
-import Error from "./pages/Error/error.jsx";
+import ContactForm from "./pages/ContactForm/ContactForm.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="*" element={<Error />}></Route>
+        <Route path="*" element={<Home />}></Route>
+        <Route path="/contact" element={<ContactForm />}></Route>
       </Routes>
-      <Footer />
     </Router>
   </React.StrictMode>
 );
