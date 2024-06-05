@@ -21,7 +21,7 @@ function Home() {
           <img src={photo} className="Home_Presentation_Photo" />
           <div>
             <div className="Home_Presentation_Header">
-              <Link to={"/contact"}>oui</Link>
+              <Link to={"/contact"}>contact</Link>
               <a href="https://github.com/Crrux">
                 <img
                   src={githubIcon}
@@ -32,7 +32,7 @@ function Home() {
             <h1>Welcome.</h1>
             <p>
               My name is Mursch Arthur and i&apos;m a fullstack web developper
-              based in France..
+              based in France.
             </p>
           </div>
         </div>

@@ -44,6 +44,25 @@
   border-radius: 10px;
 }
 
+.ContactForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+.ContactForm textarea, .ContactForm input {
+  width: 100%;
+}
+.ContactForm textarea {
+  height: 200px;
+}
+.ContactForm button {
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .ProgressBar {
   box-sizing: border-box;
   width: 10rem;
