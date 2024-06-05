@@ -65,13 +65,16 @@
   gap: 10px;
   width: 30%;
 }
-.mainContact textarea, .mainContact input {
+.mainContact .ContactForm label {
+  margin-top: 20px;
+}
+.mainContact .ContactForm textarea, .mainContact .ContactForm input {
   width: 100%;
 }
-.mainContact textarea {
+.mainContact .ContactForm textarea {
   height: 200px;
 }
-.mainContact button {
+.mainContact .ContactForm button {
   margin-top: 20px;
   width: -moz-fit-content;
   width: fit-content;
