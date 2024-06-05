@@ -11,6 +11,7 @@ import nodejsLogo from "/assets/nodejs_logo.svg";
 import photo from "/assets/photo.jpg";
 
 import ProgressBar from "../../components/progress_bar/progressbar";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
           <img src={photo} className="Home_Presentation_Photo" />
           <div>
             <div className="Home_Presentation_Header">
+              <Link to={"/contact"}>oui</Link>
               <a href="https://github.com/Crrux">
                 <img
                   src={githubIcon}
