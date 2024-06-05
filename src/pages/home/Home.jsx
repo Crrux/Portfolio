@@ -29,8 +29,8 @@ function Home() {
             </div>
             <h1>Welcome.</h1>
             <p>
-              My name is Mursch Arthur and i'm a fullstack web developper based
-              in France.
+              My name is Mursch Arthur and i&apos;m a fullstack web developper
+              based in France.
             </p>
           </div>
         </div>
