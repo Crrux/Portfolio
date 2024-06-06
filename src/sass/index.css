@@ -53,28 +53,28 @@
   border-radius: 10px;
 }
 
-.mainContact {
+.mainContact, .ContactForm_submitted {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.mainContact .ContactForm {
+.mainContact .ContactForm, .ContactForm_submitted .ContactForm {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   width: 30%;
 }
-.mainContact .ContactForm label {
+.mainContact .ContactForm label, .ContactForm_submitted .ContactForm label {
   margin-top: 20px;
 }
-.mainContact .ContactForm textarea, .mainContact .ContactForm input {
+.mainContact .ContactForm textarea, .mainContact .ContactForm input, .ContactForm_submitted .ContactForm textarea, .ContactForm_submitted .ContactForm input {
   width: 100%;
 }
-.mainContact .ContactForm textarea {
+.mainContact .ContactForm textarea, .ContactForm_submitted .ContactForm textarea {
   height: 200px;
 }
-.mainContact .ContactForm button {
+.mainContact .ContactForm button, .ContactForm_submitted .ContactForm button {
   margin-top: 20px;
   width: -moz-fit-content;
   width: fit-content;

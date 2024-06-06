@@ -27,7 +27,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="Home_Knowledge" style={{ display: "none" }}>
+      <section className="Home_Knowledge">
         <div className="Progress HomeHTMLProgress">
           <img src={htmlLogo} className="logo html" alt="HTML logo" />
           <ProgressBar progress="80" color="f44336"></ProgressBar>

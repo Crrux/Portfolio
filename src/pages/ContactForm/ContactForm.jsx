@@ -1,14 +1,17 @@
 import { useForm, ValidationError } from "@formspree/react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Form() {
+  const navigate = useNavigate();
   const [state, handleSubmit] = useForm("mleqyapn");
   if (state.succeeded) {
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
     return (
-      <div className="ContactForm_submitted">
-        <p>Thanks for joining!</p>
-        <Link to={"/"}> Return</Link>
-      </div>
+      <main className="ContactForm_submitted">
+        <p>Message sent, thanks !</p>
+      </main>
     );
   }
   return (
