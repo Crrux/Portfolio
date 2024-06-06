@@ -4,18 +4,16 @@ import javascriptLogo from "/assets/javascript_logo.svg";
 import cssLogo from "/assets/css_logo.svg";
 import sassLogo from "/assets/sass_logo.svg";
 import gitLogo from "/assets/git_logo.svg";
-import githubLogo from "/assets/github_logo.svg";
+import githubLogo from "/assets/github-icon.svg";
 
 import mongodbLogo from "/assets/mongodb_logo.svg";
 import nodejsLogo from "/assets/nodejs_logo.svg";
 import photo from "/assets/photo.jpg";
 
-import ProgressBar from "../../components/progress_bar/progressbar";
-
 function Home() {
   return (
     <main className="Home">
-      <section>
+      <section className="Home_Container">
         <div className="Home_Presentation">
           <img src={photo} className="Home_Presentation_Photo" />
           <div>
@@ -26,38 +24,71 @@ function Home() {
             </p>
           </div>
         </div>
-      </section>
-      <section className="Home_Knowledge">
-        <div className="Progress HomeHTMLProgress">
-          <img src={htmlLogo} className="logo html" alt="HTML logo" />
-          <ProgressBar progress="80" color="f44336"></ProgressBar>
-        </div>
-        <div className="Progress HomeCSSProgress">
-          <img src={cssLogo} className="logo css" alt="CSS logo" />
-          <ProgressBar progress="80" color="1c5d8e"></ProgressBar>
-        </div>
-        <div className="Progress HomeJavascriptProgress">
-          <img
-            src={javascriptLogo}
-            className="logo javascript"
-            alt="Javascript logo"
-          />
-          <ProgressBar progress="70" color="eed959"></ProgressBar>
-        </div>
-        <div className="Progress HomeReactProgress">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-          <ProgressBar progress="60" color="61dafbaa"></ProgressBar>
-        </div>
-        <div className="Progress HomeSassProgress">
-          <img src={sassLogo} className="logo sass" alt="Sass logo" />
-          <ProgressBar progress="80" color="C90076"></ProgressBar>
-        </div>
-
-        <div className="lngKnown">
-          <img src={gitLogo} className="logo git" alt="git logo" />
-          <img src={githubLogo} className="logo github" alt="github logo" />
-          <img src={mongodbLogo} className="logo mongo" alt="mongo logo" />
-          <img src={nodejsLogo} className="logo nodejs" alt="NodeJS logo" />
+        <div className="Home_Language">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Language learnt</th>
+                <th scope="col">Frameworks</th>
+                <th scope="col">Side</th>
+                <th scope="col">Interested in</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                <img src={htmlLogo} className="logo html" alt="HTML logo" />
+              </td>
+              <td>
+                <img src={reactLogo} className="logo react" alt="React logo" />
+              </td>
+              <td>
+                <img src={gitLogo} className="logo git" alt="git logo" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={cssLogo} className="logo css" alt="CSS logo" />
+              </td>
+              <td></td>
+              <td>
+                <img
+                  src={githubLogo}
+                  className="logo github"
+                  alt="github logo"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src={javascriptLogo}
+                  className="logo javascript"
+                  alt="Javascript logo"
+                />
+              </td>
+              <td></td>
+              <td>
+                <img
+                  src={mongodbLogo}
+                  className="logo mongo"
+                  alt="mongo logo"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src={sassLogo} className="logo sass" alt="Sass logo" />
+              </td>
+              <td></td>
+              <td>
+                <img
+                  src={nodejsLogo}
+                  className="logo nodejs"
+                  alt="NodeJS logo"
+                />
+              </td>
+            </tr>
+          </table>
         </div>
       </section>
     </main>

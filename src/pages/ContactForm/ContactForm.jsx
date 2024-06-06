@@ -16,21 +16,43 @@ function Form() {
   }
   return (
     <main className="mainContact">
-      <form onSubmit={handleSubmit} className="ContactForm">
-        <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email" />
-        <label htmlFor="message">Message</label>
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <textarea id="message" name="message" />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
-        <button type="submit" disabled={state.submitting}>
-          Submit
-        </button>
-      </form>
+      <div className="Form_container">
+        <form onSubmit={handleSubmit} className="ContactForm">
+          <div className="form-group">
+            <label htmlFor="email">Email Address</label>
+            <input id="email" type="email" name="email" required />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              autoCorrect="on"
+              autoComplete="false"
+              minLength={10}
+              required
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+          <button
+            type="submit"
+            className="form-submit-btn"
+            disabled={state.submitting}
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </main>
   );
 }
