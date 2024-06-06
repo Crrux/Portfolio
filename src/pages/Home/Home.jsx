@@ -36,18 +36,38 @@ function Home() {
             </thead>
             <tr>
               <td>
-                <img src={htmlLogo} className="logo html" alt="HTML logo" />
+                <img
+                  src={htmlLogo}
+                  className="logo html"
+                  alt="HTML logo"
+                  title="HTML"
+                />
               </td>
               <td>
-                <img src={reactLogo} className="logo react" alt="React logo" />
+                <img
+                  src={reactLogo}
+                  className="logo react"
+                  alt="React logo"
+                  title="React"
+                />
               </td>
               <td>
-                <img src={gitLogo} className="logo git" alt="git logo" />
+                <img
+                  src={gitLogo}
+                  className="logo git"
+                  alt="git logo"
+                  title="Git"
+                />
               </td>
             </tr>
             <tr>
               <td>
-                <img src={cssLogo} className="logo css" alt="CSS logo" />
+                <img
+                  src={cssLogo}
+                  className="logo css"
+                  alt="CSS logo"
+                  title="CSS"
+                />
               </td>
               <td></td>
               <td>
@@ -55,6 +75,7 @@ function Home() {
                   src={githubLogo}
                   className="logo github"
                   alt="github logo"
+                  title="Github"
                 />
               </td>
             </tr>
@@ -64,6 +85,7 @@ function Home() {
                   src={javascriptLogo}
                   className="logo javascript"
                   alt="Javascript logo"
+                  title="Javascript"
                 />
               </td>
               <td></td>
@@ -72,12 +94,18 @@ function Home() {
                   src={mongodbLogo}
                   className="logo mongo"
                   alt="mongo logo"
+                  title="MongoDB"
                 />
               </td>
             </tr>
             <tr>
               <td>
-                <img src={sassLogo} className="logo sass" alt="Sass logo" />
+                <img
+                  src={sassLogo}
+                  className="logo sass"
+                  alt="Sass logo"
+                  title="SASS"
+                />
               </td>
               <td></td>
               <td>
@@ -85,6 +113,7 @@ function Home() {
                   src={nodejsLogo}
                   className="logo nodejs"
                   alt="NodeJS logo"
+                  title="NodeJS"
                 />
               </td>
             </tr>
