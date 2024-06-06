@@ -5,6 +5,11 @@ import cssLogo from "/assets/css_logo.svg";
 import sassLogo from "/assets/sass_logo.svg";
 import gitLogo from "/assets/git_logo.svg";
 import githubLogo from "/assets/github-icon.svg";
+import typescript from "/assets/typescript_logo.svg";
+import nextjs from "/assets/nextjs_logo.svg";
+import nestjs from "/assets/nestjs_logo.svg";
+import mysql from "/assets/mysql_logo.svg";
+import expressjs from "/assets/express_logo.svg";
 
 import mongodbLogo from "/assets/mongodb_logo.svg";
 import nodejsLogo from "/assets/nodejs_logo.svg";
@@ -59,6 +64,14 @@ function Home() {
                   title="Git"
                 />
               </td>
+              <td>
+                <img
+                  src={mysql}
+                  className="logo mysql"
+                  alt="mySQL logo"
+                  title="mySQL"
+                />
+              </td>
             </tr>
             <tr>
               <td>
@@ -69,13 +82,28 @@ function Home() {
                   title="CSS"
                 />
               </td>
-              <td></td>
+              <td>
+                <img
+                  src={expressjs}
+                  className="logo expressjs"
+                  alt="ExpressJS logo"
+                  title="ExpressJS"
+                />
+              </td>
               <td>
                 <img
                   src={githubLogo}
                   className="logo github"
                   alt="github logo"
                   title="Github"
+                />
+              </td>
+              <td>
+                <img
+                  src={nestjs}
+                  className="logo nestjs"
+                  alt="nestJS logo"
+                  title="nestJS"
                 />
               </td>
             </tr>
@@ -97,6 +125,14 @@ function Home() {
                   title="MongoDB"
                 />
               </td>
+              <td>
+                <img
+                  src={nextjs}
+                  className="logo nextJS"
+                  alt="NextJS logo"
+                  title="NextJS"
+                />
+              </td>
             </tr>
             <tr>
               <td>
@@ -114,6 +150,14 @@ function Home() {
                   className="logo nodejs"
                   alt="NodeJS logo"
                   title="NodeJS"
+                />
+              </td>
+              <td>
+                <img
+                  src={typescript}
+                  className="logo typescript"
+                  alt="typescript logo"
+                  title="Typescript"
                 />
               </td>
             </tr>
