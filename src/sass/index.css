@@ -22,9 +22,12 @@
   width: 100%;
 }
 .Home_Container {
-  background-color: rgba(128, 128, 128, 0.6862745098);
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  background-size: 200% 100%;
   border-radius: 20px;
   width: 50%;
+  animation: test 5s ease infinite;
+  border: 2px solid transparent;
 }
 .Home_Presentation {
   padding: 20px;
@@ -39,7 +42,7 @@
   margin-right: 30px;
   border-radius: 30px;
   background: #e0e0e0;
-  box-shadow: 39px 39px 66px #7b7b7b, -39px -39px 66px #ffffff;
+  box-shadow: 15px 15px 66px #7b7b7b;
 }
 .Home_Language {
   display: flex;
@@ -74,6 +77,17 @@
   border-radius: 10px;
 }
 
+@keyframes test {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .mainContact, .ContactForm_submitted {
   width: 100%;
   display: flex;
