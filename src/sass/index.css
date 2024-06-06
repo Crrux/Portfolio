@@ -16,9 +16,15 @@
   width: 50px;
 }
 
+.Home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .Home_Container {
   background-color: rgba(128, 128, 128, 0.6862745098);
   border-radius: 20px;
+  width: 50%;
 }
 .Home_Presentation {
   padding: 20px;
