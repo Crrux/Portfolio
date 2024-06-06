@@ -3,9 +3,13 @@
     justify-content: center
     width: 100%
     &_Container
-        background-color: #808080af
+        background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box
+        background-size: 200% 100%
         border-radius: 20px
         width: 50%
+        animation: test 5s ease infinite
+        border: 2px solid transparent
+
     &_Presentation
         padding: 20px
         display: flex
@@ -14,11 +18,10 @@
             font-weight: 200
         &_Photo
             width: 300px
-
             margin-right: 30px
             border-radius: 30px
             background: #e0e0e0
-            box-shadow: 39px 39px 66px #7b7b7b, -39px -39px 66px #ffffff
+            box-shadow: 15px 15px 66px #7b7b7b
     &_Language
         display: flex
         justify-content: center
@@ -46,3 +49,13 @@
                 padding: 10px
                 background-color: #FFF
                 border-radius: 10px
+
+@keyframes test
+    0%
+        background-position: 0% 50%
+
+    50%
+        background-position: 100% 50%
+
+    100%
+        background-position: 0% 50%
