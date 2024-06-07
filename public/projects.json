@@ -1,0 +1,17 @@
+{
+  "booki": {
+    "imageURL": "/assets/projects_screenshots/booki.webp"
+  },
+  "bluel": {
+    "imageURL": "/assets/projects_screenshots/bluel.webp"
+  },
+  "carducci": {
+    "imageURL": "/assets/projects_screenshots/carducci.webp"
+  },
+  "grimoire": {
+    "imageURL": "/assets/projects_screenshots/grimoire.webp"
+  },
+  "kasa": {
+    "imageURL": "/assets/projects_screenshots/kasa.webp"
+  }
+}
