@@ -13,6 +13,11 @@ function Home() {
               My name is Mursch Arthur and i&apos;m a fullstack web developper
               based in France.
             </p>
+            <p>
+              📩 Are you looking for a passionate and versatile developer for
+              your next project? Don&apos;t hesitate to contact me to discuss
+              your requirements.
+            </p>
           </div>
         </div>
         <div className="Home_Language">

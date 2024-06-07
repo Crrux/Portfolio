@@ -51,7 +51,7 @@
   flex-wrap: wrap;
 }
 .Home_Language_pcontainer {
-  width: 100%;
+  width: 50%;
   display: inline-flex;
 }
 .Home_Language_pcontainer p {
