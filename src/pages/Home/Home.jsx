@@ -14,6 +14,10 @@ function Home() {
               based in France.
             </p>
             <p>
+              Junior web developer eager to learn and do projects that can give
+              me the opportunity to take on new challenges and learn.
+            </p>
+            <p>
               📩 Are you looking for a passionate and versatile developer for
               your next project? Don&apos;t hesitate to contact me to discuss
               your requirements.
