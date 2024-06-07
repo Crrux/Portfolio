@@ -1,18 +1,5 @@
-import reactLogo from "/assets/react_logo.svg";
-import htmlLogo from "/assets/html_logo.svg";
-import javascriptLogo from "/assets/javascript_logo.svg";
-import cssLogo from "/assets/css_logo.svg";
-import sassLogo from "/assets/sass_logo.svg";
-import gitLogo from "/assets/git_logo.svg";
-import githubLogo from "/assets/github-icon.svg";
-import typescript from "/assets/typescript_logo.svg";
-import nextjs from "/assets/nextjs_logo.svg";
-import nestjs from "/assets/nestjs_logo.svg";
-import mysql from "/assets/mysql_logo.svg";
-import expressjs from "/assets/express_logo.svg";
-import mongodbLogo from "/assets/mongodb_logo.svg";
-import nodejsLogo from "/assets/nodejs_logo.svg";
 import photo from "/assets/photo.jpg";
+import Logosvg from "../../components/logosvg/logosvg";
 
 function Home() {
   return (
@@ -29,140 +16,29 @@ function Home() {
           </div>
         </div>
         <div className="Home_Language">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Language learnt</th>
-                <th scope="col">Frameworks</th>
-                <th scope="col">Side</th>
-                <th scope="col">Interested in</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src={htmlLogo}
-                    className="logo html"
-                    alt="HTML logo"
-                    title="HTML"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={reactLogo}
-                    className="logo react"
-                    alt="React logo"
-                    title="React"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={gitLogo}
-                    className="logo git"
-                    alt="git logo"
-                    title="Git"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={mysql}
-                    className="logo mysql"
-                    alt="mySQL logo"
-                    title="mySQL"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src={cssLogo}
-                    className="logo css"
-                    alt="CSS logo"
-                    title="CSS"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={expressjs}
-                    className="logo expressjs"
-                    alt="ExpressJS logo"
-                    title="ExpressJS"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={githubLogo}
-                    className="logo github"
-                    alt="github logo"
-                    title="Github"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={nestjs}
-                    className="logo nestjs"
-                    alt="nestJS logo"
-                    title="nestJS"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src={javascriptLogo}
-                    className="logo javascript"
-                    alt="Javascript logo"
-                    title="Javascript"
-                  />
-                </td>
-                <td></td>
-                <td>
-                  <img
-                    src={mongodbLogo}
-                    className="logo mongo"
-                    alt="mongo logo"
-                    title="MongoDB"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={nextjs}
-                    className="logo nextJS"
-                    alt="NextJS logo"
-                    title="NextJS"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src={sassLogo}
-                    className="logo sass"
-                    alt="Sass logo"
-                    title="SASS"
-                  />
-                </td>
-                <td></td>
-                <td>
-                  <img
-                    src={nodejsLogo}
-                    className="logo nodejs"
-                    alt="NodeJS logo"
-                    title="NodeJS"
-                  />
-                </td>
-                <td>
-                  <img
-                    src={typescript}
-                    className="logo typescript"
-                    alt="typescript logo"
-                    title="Typescript"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="Home_Language_pcontainer">
+            <p>
+              Language learnt:
+              <Logosvg logos={["HTML", "CSS", "Javascript", "SASS"]} />
+            </p>
+          </div>
+          <div className="Home_Language_pcontainer"></div>
+          <div className="Home_Language_pcontainer">
+            <p>
+              Frameworks learnt: <Logosvg logos={["ExpressJS", "React"]} />
+            </p>
+          </div>
+          <div className="Home_Language_pcontainer">
+            <p>
+              Side: <Logosvg logos={["Git", "Github", "MongoDB", "NodeJS"]} />
+            </p>
+          </div>
+          <div className="Home_Language_pcontainer">
+            <p>
+              Interested in:
+              <Logosvg logos={["mySQL", "NestJS", "NextJS", "Typescript"]} />
+            </p>
+          </div>
         </div>
       </section>
     </main>
