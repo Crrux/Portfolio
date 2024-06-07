@@ -1,0 +1,58 @@
+{
+  "CSS": {
+    "title": "CSS logo",
+    "URL": "/assets/css_logo.svg"
+  },
+  "ExpressJS": {
+    "title": "Express logo",
+    "URL": "/assets/express_logo.svg"
+  },
+  "Git": {
+    "title": "Git logo",
+    "URL": "/assets/git_logo.svg"
+  },
+  "Github": {
+    "title": "Github logo",
+    "URL": "/assets/github-icon.svg"
+  },
+  "HTML": {
+    "title": "HTML logo",
+    "URL": "/assets/html_logo.svg"
+  },
+  "Javascript": {
+    "title": "Javascript logo",
+    "URL": "/assets/javascript_logo.svg"
+  },
+  "MongoDB": {
+    "title": "MongoDB logo",
+    "URL": "/assets/mondodb_logo.svg"
+  },
+  "mySQL": {
+    "title": "mySQL logo",
+    "URL": "/assets/mysql_logo.svg"
+  },
+  "NestJS": {
+    "title": "NestJS logo",
+    "URL": "/assets/nestjs_logo.svg"
+  },
+  "NextJS": {
+    "title": "NextJS logo",
+    "URL": "/assets/nextjs_logo.svg"
+  },
+  "NodeJS": {
+    "title": "NodeJS logo",
+    "URL": "/assets/NodeJS_logo.svg"
+  },
+  "React": {
+    "title": "React logo",
+    "URL": "/assets/React_logo.svg"
+  },
+  "SASS": {
+    "title": "SASS logo",
+    "URL": "/assets/sass_logo.svg"
+  },
+  "TypeScript": {
+    "title": "Typescript logo",
+    "URL": "/assets/typescript_logo.svg"
+  }
+}
