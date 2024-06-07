@@ -1,5 +1,6 @@
 import photo from "/assets/photo.jpg";
 import Logosvg from "../../components/logosvg/logosvg";
+import ProjectCard from "../../components/project_card/project_card";
 
 function Home() {
   return (
@@ -48,6 +49,9 @@ function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section>
+        <ProjectCard project={"test"}></ProjectCard>
       </section>
     </main>
   );
