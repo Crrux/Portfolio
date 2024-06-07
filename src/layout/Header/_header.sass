@@ -1,14 +1,22 @@
 .Header
     display: flex
-    justify-content: flex-end
+    justify-content: space-between
     align-items: center
     width: 70%
-    gap: 15px
+    margin-top: 0
+    padding-top: 0
     margin-bottom: 30px
     font-size: 20px
     font-weight: 500
-    a
-        text-decoration: none
-        color: white
-    &_GithubLogo
-        width: 50px
+    &_nav
+        display: flex
+        align-items: center
+        gap: 15px
+        a
+            text-decoration: none
+            color: white
+        &_link_GithubLogo
+            display: flex
+            align-items: center
+        &_GithubLogo
+            width: 50px
