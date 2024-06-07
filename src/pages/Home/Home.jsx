@@ -18,14 +18,13 @@ function Home() {
         <div className="Home_Language">
           <div className="Home_Language_pcontainer">
             <p>
-              Language learnt:
+              Language :
               <Logosvg logos={["HTML", "CSS", "Javascript", "SASS"]} />
             </p>
           </div>
-          <div className="Home_Language_pcontainer"></div>
           <div className="Home_Language_pcontainer">
             <p>
-              Frameworks learnt: <Logosvg logos={["ExpressJS", "React"]} />
+              Frameworks : <Logosvg logos={["ExpressJS", "React"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">

@@ -1,4 +1,4 @@
-import githubIcon from "/assets/github-icon.svg";
+import githubIcon from "/assets/svg/github-icon.svg";
 
 import { Link } from "react-router-dom";
 

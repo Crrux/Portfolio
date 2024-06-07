@@ -2,71 +2,71 @@
   "CSS": {
     "title": "CSS",
     "alt": "CSS logo",
-    "URL": "/assets/css_logo.svg"
+    "URL": "/assets/svg/css_logo.svg"
   },
   "ExpressJS": {
     "title": "ExpressJS",
     "alt": "ExpressJS logo",
-    "URL": "/assets/express_logo.svg"
+    "URL": "/assets/svg/express_logo.svg"
   },
   "Git": {
     "title": "Git",
     "alt": "Git logo",
-    "URL": "/assets/git_logo.svg"
+    "URL": "/assets/svg/git_logo.svg"
   },
   "Github": {
     "title": "Github",
     "alt": "Github logo",
-    "URL": "/assets/github-icon.svg"
+    "URL": "/assets/svg/github-icon.svg"
   },
   "HTML": {
     "title": "HTML",
     "alt": "HTML logo",
-    "URL": "/assets/html_logo.svg"
+    "URL": "/assets/svg/html_logo.svg"
   },
   "Javascript": {
     "title": "Javascript",
     "alt": "Javascript logo",
-    "URL": "/assets/javascript_logo.svg"
+    "URL": "/assets/svg/javascript_logo.svg"
   },
   "MongoDB": {
     "title": "MongoDB",
     "alt": "MongoDB logo",
-    "URL": "/assets/mongodb_logo.svg"
+    "URL": "/assets/svg/mongodb_logo.svg"
   },
   "mySQL": {
     "title": "mySQL",
     "alt": "mySQL logo",
-    "URL": "/assets/mysql_logo.svg"
+    "URL": "/assets/svg/mysql_logo.svg"
   },
   "NestJS": {
     "title": "NestJS",
     "alt": "NestJS logo",
-    "URL": "/assets/nestjs_logo.svg"
+    "URL": "/assets/svg/nestjs_logo.svg"
   },
   "NextJS": {
     "title": "NestJS",
     "alt": "NextJS logo",
-    "URL": "/assets/nextjs_logo.svg"
+    "URL": "/assets/svg/nextjs_logo.svg"
   },
   "NodeJS": {
     "title": "NodeJS",
     "alt": "NodeJS logo",
-    "URL": "/assets/nodejs_logo.svg"
+    "URL": "/assets/svg/nodejs_logo.svg"
   },
   "React": {
     "title": "React",
     "alt": "React logo",
-    "URL": "/assets/react_logo.svg"
+    "URL": "/assets/svg/react_logo.svg"
   },
   "SASS": {
     "title": "SASS",
     "alt": "SASS logo",
-    "URL": "/assets/sass_logo.svg"
+    "URL": "/assets/svg/sass_logo.svg"
   },
   "Typescript": {
     "title": "Typescript",
     "alt": "Typescript logo",
-    "URL": "/assets/typescript_logo.svg"
+    "URL": "/assets/svg/typescript_logo.svg"
   }
 }

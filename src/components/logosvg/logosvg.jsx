@@ -37,8 +37,6 @@ function Logosvg({ logos: elementsToCompare }) {
               src={logo.URL}
               alt={logo.alt}
               title={logo.title}
-              width="100"
-              height="100"
             />
           );
         }
