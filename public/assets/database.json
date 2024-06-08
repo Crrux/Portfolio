@@ -76,14 +76,14 @@
       "name": "Front-end for booki (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/booki.webp",
       "lienGithub": "https://github.com/Crrux/booki-starter-code",
-      "description": "oui",
+      "description": "HTML / CSS discovery",
       "used": ["HTML", "CSS"]
     },
     {
       "name": "Front-end for Sophie Bluel (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/bluel.webp",
       "lienGithub": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel",
-      "description": "oui",
+      "description": "Javascript discovery",
       "used": ["HTML", "CSS", "Javascript"]
     },
     {
