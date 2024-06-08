@@ -125,6 +125,7 @@
   padding: 5px;
   background: rgb(33, 33, 33);
   background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
+  gap: 20px;
 }
 @media screen and (max-width: 767.98px) {
   .Home_Language_pcontainer_2 {
