@@ -41,7 +41,7 @@ function ProjectCard() {
                     />
                   </div>
                   <div className="Cards_Container_Info_Description">
-                    <p>description</p>
+                    <p>{project.description}</p>
                     <div className="Cards_Container_Info_Description_imgcontainer">
                       {project.used.map((logoName, index) => {
                         const logo = logos.find((l) => l.title === logoName);
