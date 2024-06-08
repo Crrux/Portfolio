@@ -295,7 +295,8 @@ button:active {
   border-radius: 20px;
   width: 40%;
   margin: auto auto 30px auto;
-  height: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
   animation: HomeGradient 5s ease infinite;
   border: 2px solid transparent;
   padding: 10px;
@@ -314,6 +315,11 @@ button:active {
   align-items: center;
   height: 175px;
 }
+@media screen and (max-width: 767.98px) {
+  .Cards_Container_Info {
+    flex-direction: column;
+  }
+}
 .Cards_Container_Info_Image img {
   width: 80%;
   border-radius: 20px;
@@ -321,13 +327,18 @@ button:active {
 }
 @media screen and (max-width: 767.98px) {
   .Cards_Container_Info_Image img {
-    width: 110px;
+    width: 40%;
     border-radius: 10px;
   }
 }
 .Cards_Container_Info_Image, .Cards_Container_Info_Description {
   flex-grow: 1;
   width: 30%;
+}
+@media screen and (max-width: 767.98px) {
+  .Cards_Container_Info_Image, .Cards_Container_Info_Description {
+    width: 100%;
+  }
 }
 .Cards_Container_Info_Description {
   font-size: 0.7rem;
@@ -339,6 +350,7 @@ button:active {
   width: 100%;
   background: rgb(33, 33, 33);
   background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
+  margin-bottom: 10px;
 }
 .Cards_Container_Info_Description_imgcontainer img {
   padding: 5px;

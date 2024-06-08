@@ -12,7 +12,7 @@
         border-radius: 20px
         width: 40%
         margin: auto auto 30px auto
-        height: 300px
+        height: fit-content
         animation: HomeGradient 5s ease infinite
         border: 2px solid transparent
         padding: 10px
@@ -25,17 +25,21 @@
             justify-content: space-between
             align-items: center
             height: 175px
+            @media screen and ( max-width: $layout-breakpoint-small )
+                flex-direction: column
             &_Image
                 img
                     width: 80%
                     border-radius: 20px
                     max-height: 175px
                     @media screen and ( max-width: $layout-breakpoint-small )
-                        width: 110px
+                        width: 40%
                         border-radius: 10px
             &_Image, &_Description
                 flex-grow: 1
                 width: 30%
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    width: 100%
             &_Description
                 font-size: 0.7rem
                 &_imgcontainer
@@ -45,5 +49,6 @@
                     width: 100%
                     background: rgb(33,33,33)
                     background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
+                    margin-bottom: 10px
                     img
                         padding: 5px
