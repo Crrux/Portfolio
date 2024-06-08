@@ -73,29 +73,39 @@
   ],
   "projects": [
     {
-      "name": "booki",
+      "name": "Front-end for booki (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/booki.webp",
-      "lienGithub": "https://github.com/Crrux/booki-starter-code"
+      "lienGithub": "https://github.com/Crrux/booki-starter-code",
+      "description": "HTML / CSS discovery",
+      "used": ["HTML", "CSS"]
     },
     {
-      "name": "bluel",
+      "name": "Front-end for Sophie Bluel (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/bluel.webp",
-      "lienGithub": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel"
+      "lienGithub": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel",
+      "description": "Javascript discovery",
+      "used": ["HTML", "CSS", "Javascript"]
     },
     {
-      "name": "carducci",
+      "name": "Debug + optimization for Nina Carducci (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/carducci.webp",
-      "lienGithub": "https://github.com/Crrux/nina-carducci.github.io"
+      "lienGithub": "https://github.com/Crrux/nina-carducci.github.io",
+      "description": "Debugging and optimization using Lighthouse and WAVE",
+      "used": ["HTML", "CSS", "Javascript"]
     },
     {
-      "name": "grimoire",
+      "name": "Back-end for Mon Vieux Grimoire (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/grimoire.webp",
-      "lienGithub": "https://github.com/Crrux/P7-BackEnd"
+      "lienGithub": "https://github.com/Crrux/P7-BackEnd",
+      "description": "Implementation of an API and a database for “Mon Vieux Grimoire”.",
+      "used": ["Javascript", "ExpressJS", "MongoDB"]
     },
     {
-      "name": "kasa",
+      "name": "Front-end for Kasa (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/kasa.webp",
-      "lienGithub": "https://github.com/Crrux/kasa"
+      "lienGithub": "https://github.com/Crrux/kasa",
+      "description": "Front-end developped with React",
+      "used": ["React"]
     }
   ]
 }

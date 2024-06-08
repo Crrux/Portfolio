@@ -20,7 +20,6 @@ function Logosvg({ logos: elementsToCompare }) {
           }
           return null;
         });
-        console.log(logoElements);
         setData(logoElements);
       } catch (error) {
         console.error(error);

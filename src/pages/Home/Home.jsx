@@ -27,31 +27,33 @@ function Home() {
         </div>
         <div className="Home_Language">
           <div className="Home_Language_pcontainer">
-            <p>
-              Language :
+            <p className="Home_Language_pcontainer_1">Language :</p>
+            <p className="Home_Language_pcontainer_2">
               <Logosvg logos={["HTML", "CSS", "Javascript", "SASS"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
-            <p>
-              Frameworks : <Logosvg logos={["ExpressJS", "React"]} />
+            <p className="Home_Language_pcontainer_1">Frameworks :</p>
+            <p className="Home_Language_pcontainer_2">
+              <Logosvg logos={["ExpressJS", "React"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
-            <p>
-              Side: <Logosvg logos={["Git", "Github", "MongoDB", "NodeJS"]} />
+            <p className="Home_Language_pcontainer_1">Side:</p>
+            <p className="Home_Language_pcontainer_2">
+              <Logosvg logos={["Git", "Github", "MongoDB", "NodeJS"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
-            <p>
-              Interested in:
+            <p className="Home_Language_pcontainer_1">Interested in:</p>
+            <p className="Home_Language_pcontainer_2">
               <Logosvg logos={["mySQL", "NestJS", "NextJS", "Typescript"]} />
             </p>
           </div>
         </div>
       </section>
 
-      <ProjectCard project={["test"]}></ProjectCard>
+      <ProjectCard />
     </main>
   );
 }
