@@ -32,7 +32,6 @@ function ProjectCard() {
             >
               <article>
                 <h3>{project.name}</h3>
-
                 <img src={project.imageURL} alt={`Image of ${project.name}`} />
               </article>
             </a>
