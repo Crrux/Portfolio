@@ -90,21 +90,21 @@
       "name": "Debug + optimization for Nina Carducci (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/carducci.webp",
       "lienGithub": "https://github.com/Crrux/nina-carducci.github.io",
-      "description": "oui",
+      "description": "Debugging and optimization",
       "used": ["HTML", "CSS", "Javascript"]
     },
     {
       "name": "Back-end for Mon Vieux Grimoire (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/grimoire.webp",
       "lienGithub": "https://github.com/Crrux/P7-BackEnd",
-      "description": "oui",
+      "description": "Implementation of an API and a database for “Mon Vieux Grimoire”.",
       "used": ["Javascript", "ExpressJS", "MongoDB"]
     },
     {
       "name": "Front-end for Kasa (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/kasa.webp",
       "lienGithub": "https://github.com/Crrux/kasa",
-      "description": "oui",
+      "description": "Front-end developped with React",
       "used": ["React"]
     }
   ]

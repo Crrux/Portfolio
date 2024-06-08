@@ -320,13 +320,16 @@ button:active {
 }
 @media screen and (max-width: 767.98px) {
   .Cards_Container_Info_Image img {
-    width: 80px;
+    width: 110px;
     border-radius: 10px;
   }
 }
 .Cards_Container_Info_Image, .Cards_Container_Info_Description {
   flex-grow: 1;
   width: 30%;
+}
+.Cards_Container_Info_Description {
+  font-size: 0.7rem;
 }
 .Cards_Container_Info_Description_imgcontainer {
   display: flex;
