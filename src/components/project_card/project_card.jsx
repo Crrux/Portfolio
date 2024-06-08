@@ -32,7 +32,17 @@ function ProjectCard() {
             >
               <article>
                 <h3>{project.name}</h3>
-                <img src={project.imageURL} alt={`Image of ${project.name}`} />
+                <div className="Cards_Container_Info">
+                  <div className="Cards_Container_Info_Image">
+                    <img
+                      src={project.imageURL}
+                      alt={`Image of ${project.name}`}
+                    />
+                  </div>
+                  <div className="Cards_Container_Info_Description">
+                    <p>test</p>
+                  </div>
+                </div>
               </article>
             </a>
           ))}

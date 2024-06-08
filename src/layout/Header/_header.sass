@@ -8,10 +8,14 @@
     margin-bottom: 30px
     font-size: 20px
     font-weight: 500
+    @media screen and ( max-width: $layout-breakpoint-small )
+        font-size: 10px
+        width: 90%
     &_nav
         display: flex
         align-items: center
         gap: 15px
+
         a
             text-decoration: none
             color: white
@@ -20,3 +24,5 @@
             align-items: center
         &_GithubLogo
             width: 50px
+            @media screen and ( max-width: $layout-breakpoint-small )
+                width: 25px

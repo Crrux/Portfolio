@@ -27,31 +27,33 @@ function Home() {
         </div>
         <div className="Home_Language">
           <div className="Home_Language_pcontainer">
+            <p>Language :</p>
             <p>
-              Language :
               <Logosvg logos={["HTML", "CSS", "Javascript", "SASS"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
+            <p>Frameworks :</p>
             <p>
-              Frameworks : <Logosvg logos={["ExpressJS", "React"]} />
+              <Logosvg logos={["ExpressJS", "React"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
+            <p>Side:</p>
             <p>
-              Side: <Logosvg logos={["Git", "Github", "MongoDB", "NodeJS"]} />
+              <Logosvg logos={["Git", "Github", "MongoDB", "NodeJS"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
+            <p>Interested in:</p>
             <p>
-              Interested in:
               <Logosvg logos={["mySQL", "NestJS", "NextJS", "Typescript"]} />
             </p>
           </div>
         </div>
       </section>
 
-      <ProjectCard project={["test"]}></ProjectCard>
+      <ProjectCard />
     </main>
   );
 }

@@ -10,12 +10,23 @@
         background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#fff, #fff) border-box
         background-size: 200% 100%
         border-radius: 20px
-        min-width: 40%
+        width: 40%
         margin: auto auto 30px auto
-        min-height: 100px
+        height: 300px
         animation: HomeGradient 5s ease infinite
         border: 2px solid transparent
         padding: 10px
-        img
+        @media screen and ( max-width: $layout-breakpoint-small )
+            width: 80%
+        &_Info
+            display: flex
+            justify-content: space-between
+            align-items: center
             height: 200px
+            &_Image, &_Description
+                flex-grow: 1
+                width: 30%
+
+        img
+            width: 200px
             border-radius: 20px
