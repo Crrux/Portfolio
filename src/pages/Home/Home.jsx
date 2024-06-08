@@ -28,25 +28,25 @@ function Home() {
         <div className="Home_Language">
           <div className="Home_Language_pcontainer">
             <p>Language :</p>
-            <p>
+            <p className="Home_Language_pcontainer_2">
               <Logosvg logos={["HTML", "CSS", "Javascript", "SASS"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
             <p>Frameworks :</p>
-            <p>
+            <p className="Home_Language_pcontainer_2">
               <Logosvg logos={["ExpressJS", "React"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
             <p>Side:</p>
-            <p>
+            <p className="Home_Language_pcontainer_2">
               <Logosvg logos={["Git", "Github", "MongoDB", "NodeJS"]} />
             </p>
           </div>
           <div className="Home_Language_pcontainer">
             <p>Interested in:</p>
-            <p>
+            <p className="Home_Language_pcontainer_2">
               <Logosvg logos={["mySQL", "NestJS", "NextJS", "Typescript"]} />
             </p>
           </div>

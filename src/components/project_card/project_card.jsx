@@ -8,7 +8,6 @@ function ProjectCard() {
       try {
         const response = await fetch("/assets/database.json");
         const ProjectsData = await response.json();
-
         setData(ProjectsData);
       } catch (error) {
         console.error(error);

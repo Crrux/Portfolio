@@ -38,17 +38,28 @@
         justify-content: space-around
         flex-wrap: wrap
         &_pcontainer
+            display: inline-flex
             width: 40%
             height: 60px
-            display: inline-flex
             margin: 10px
             background: rgb(33,33,33)
             background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
-            @media screen and ( max-width: $layout-breakpoint-small )
-                width: 80%
+            @media screen and ( max-width: $layout-breakpoint-tablet-max )
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                min-width: fit-content
+                height: fit-content
+                background: none
+                &_2
+                    padding: 5px
+                    background: rgb(33,33,33)
+                    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
+
             p
                 display: inline-flex
                 align-items: center
+                width: fit-content
 
 @keyframes HomeGradient
     0%
