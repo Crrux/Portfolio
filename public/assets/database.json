@@ -90,7 +90,7 @@
       "name": "Debug + optimization for Nina Carducci (OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/carducci.webp",
       "lienGithub": "https://github.com/Crrux/nina-carducci.github.io",
-      "description": "Debugging and optimization",
+      "description": "Debugging and optimization using Lighthouse and WAVE",
       "used": ["HTML", "CSS", "Javascript"]
     },
     {
