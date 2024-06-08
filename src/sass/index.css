@@ -64,6 +64,7 @@
 }
 @media screen and (max-width: 767.98px) {
   .Home_Presentation {
+    font-size: 0.8rem;
     flex-direction: column;
     align-items: center;
   }
@@ -99,6 +100,9 @@
   background: rgb(33, 33, 33);
   background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
 }
+.Home_Language_pcontainer_1 {
+  font-weight: bold;
+}
 @media screen and (max-width: 1150px) {
   .Home_Language_pcontainer {
     display: flex;
@@ -111,6 +115,7 @@
     background: none;
   }
   .Home_Language_pcontainer_2 {
+    margin: 0;
     padding: 5px;
     background: rgb(33, 33, 33);
     background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
@@ -299,20 +304,39 @@ button:active {
   .Cards_Container {
     width: 80%;
   }
+  .Cards_Container h3 {
+    font-size: 0.8rem;
+  }
 }
 .Cards_Container_Info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 175px;
+}
+.Cards_Container_Info_Image img {
+  width: 80%;
+  border-radius: 20px;
+}
+@media screen and (max-width: 767.98px) {
+  .Cards_Container_Info_Image img {
+    width: 80px;
+    border-radius: 10px;
+  }
 }
 .Cards_Container_Info_Image, .Cards_Container_Info_Description {
   flex-grow: 1;
   width: 30%;
 }
-.Cards_Container img {
-  width: 200px;
-  border-radius: 20px;
+.Cards_Container_Info_Description_imgcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Cards_Container_Info_Description_imgcontainer img {
+  background-color: white;
+  padding: 5px;
 }
 
 :root {

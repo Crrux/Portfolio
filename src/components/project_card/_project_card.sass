@@ -18,15 +18,32 @@
         padding: 10px
         @media screen and ( max-width: $layout-breakpoint-small )
             width: 80%
+            h3
+                font-size: 0.8rem
         &_Info
             display: flex
             justify-content: space-between
             align-items: center
-            height: 200px
+            height: 175px
+            &_Image
+                img
+                    width: 80%
+                    border-radius: 20px
+                    @media screen and ( max-width: $layout-breakpoint-small )
+                        width: 80px
+                        border-radius: 10px
             &_Image, &_Description
                 flex-grow: 1
                 width: 30%
+            &_Description
+                &_imgcontainer
+                    display: flex
+                    justify-content: center
+                    flex-wrap: wrap
 
-        img
-            width: 200px
-            border-radius: 20px
+                    // padding: px
+                    width: 100%
+                    img
+                        background-color: white
+                        padding: 5px
+                        // width: px

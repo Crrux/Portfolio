@@ -18,6 +18,7 @@
         align-items: center
         flex-direction: row
         @media screen and ( max-width: $layout-breakpoint-small )
+            font-size: 0.8rem
             flex-direction: column
             align-items: center
         h1
@@ -44,6 +45,8 @@
             margin: 10px
             background: rgb(33,33,33)
             background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
+            &_1
+                font-weight: bold
             @media screen and ( max-width: $layout-breakpoint-tablet-max )
                 display: flex
                 flex-direction: column
@@ -52,6 +55,7 @@
                 height: fit-content
                 background: none
                 &_2
+                    margin: 0
                     padding: 5px
                     background: rgb(33,33,33)
                     background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
