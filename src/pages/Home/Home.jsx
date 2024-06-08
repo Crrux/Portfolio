@@ -50,9 +50,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <ProjectCard project={"test"}></ProjectCard>
-      </section>
+
+      <ProjectCard project={["test"]}></ProjectCard>
     </main>
   );
 }

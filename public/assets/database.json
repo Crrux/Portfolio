@@ -1,0 +1,101 @@
+{
+  "logos": [
+    {
+      "title": "CSS",
+      "alt": "CSS logo",
+      "URL": "/assets/svg/css_logo.svg"
+    },
+    {
+      "title": "ExpressJS",
+      "alt": "ExpressJS logo",
+      "URL": "/assets/svg/express_logo.svg"
+    },
+    {
+      "title": "Git",
+      "alt": "Git logo",
+      "URL": "/assets/svg/git_logo.svg"
+    },
+    {
+      "title": "Github",
+      "alt": "Github logo",
+      "URL": "/assets/svg/github-icon.svg"
+    },
+    {
+      "title": "HTML",
+      "alt": "HTML logo",
+      "URL": "/assets/svg/html_logo.svg"
+    },
+    {
+      "title": "Javascript",
+      "alt": "Javascript logo",
+      "URL": "/assets/svg/javascript_logo.svg"
+    },
+    {
+      "title": "MongoDB",
+      "alt": "MongoDB logo",
+      "URL": "/assets/svg/mongodb_logo.svg"
+    },
+    {
+      "title": "mySQL",
+      "alt": "mySQL logo",
+      "URL": "/assets/svg/mysql_logo.svg"
+    },
+    {
+      "title": "NestJS",
+      "alt": "NestJS logo",
+      "URL": "/assets/svg/nestjs_logo.svg"
+    },
+    {
+      "title": "NestJS",
+      "alt": "NextJS logo",
+      "URL": "/assets/svg/nextjs_logo.svg"
+    },
+    {
+      "title": "NodeJS",
+      "alt": "NodeJS logo",
+      "URL": "/assets/svg/nodejs_logo.svg"
+    },
+    {
+      "title": "React",
+      "alt": "React logo",
+      "URL": "/assets/svg/react_logo.svg"
+    },
+    {
+      "title": "SASS",
+      "alt": "SASS logo",
+      "URL": "/assets/svg/sass_logo.svg"
+    },
+    {
+      "title": "TypeScript",
+      "alt": "TypeScript logo",
+      "URL": "/assets/svg/typescript_logo.svg"
+    }
+  ],
+  "projects": [
+    {
+      "name": "booki",
+      "imageURL": "/assets/projects_screenshots/booki.webp",
+      "lienGithub": "https://github.com/Crrux/booki-starter-code"
+    },
+    {
+      "name": "bluel",
+      "imageURL": "/assets/projects_screenshots/bluel.webp",
+      "lienGithub": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel"
+    },
+    {
+      "name": "carducci",
+      "imageURL": "/assets/projects_screenshots/carducci.webp",
+      "lienGithub": "https://github.com/Crrux/nina-carducci.github.io"
+    },
+    {
+      "name": "grimoire",
+      "imageURL": "/assets/projects_screenshots/grimoire.webp",
+      "lienGithub": "https://github.com/Crrux/P7-BackEnd"
+    },
+    {
+      "name": "kasa",
+      "imageURL": "/assets/projects_screenshots/kasa.webp",
+      "lienGithub": "https://github.com/Crrux/kasa"
+    }
+  ]
+}

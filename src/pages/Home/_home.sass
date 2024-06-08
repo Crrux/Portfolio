@@ -1,5 +1,6 @@
 .Home
     display: flex
+    flex-wrap: wrap
     justify-content: center
     width: 100%
     &_Container
@@ -7,7 +8,7 @@
         background-size: 200% 100%
         border-radius: 20px
         width: 50%
-        animation: test 5s ease infinite
+        animation: HomeGradient 5s ease infinite
         border: 2px solid transparent
 
     &_Presentation
@@ -38,7 +39,7 @@
                 background: rgb(33,33,33)
                 background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
 
-@keyframes test
+@keyframes HomeGradient
     0%
         background-position: 0% 50%
 
