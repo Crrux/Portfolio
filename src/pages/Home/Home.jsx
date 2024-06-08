@@ -47,7 +47,7 @@ function Home() {
           <div className="Home_Language_pcontainer">
             <p className="Home_Language_pcontainer_1">Interested in:</p>
             <p className="Home_Language_pcontainer_2">
-              <Logosvg logos={["mySQL", "NestJS", "NextJS", "Typescript"]} />
+              <Logosvg logos={["mySQL", "NestJS", "NextJS", "TypeScript"]} />
             </p>
           </div>
         </div>
