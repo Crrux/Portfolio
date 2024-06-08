@@ -28,6 +28,7 @@
 
 .Home {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -36,7 +37,7 @@
   background-size: 200% 100%;
   border-radius: 20px;
   width: 50%;
-  animation: test 5s ease infinite;
+  animation: HomeGradient 5s ease infinite;
   border: 2px solid transparent;
 }
 .Home_Presentation {
@@ -72,7 +73,7 @@
   background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
 }
 
-@keyframes test {
+@keyframes HomeGradient {
   0% {
     background-position: 0% 50%;
   }
@@ -217,6 +218,30 @@ button:active {
 .logo {
   padding-left: 25px;
   height: 40px;
+}
+
+.Cards {
+  flex-wrap: wrap;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+.Cards_Container {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #fff, #fff) border-box;
+  background-size: 200% 100%;
+  border-radius: 20px;
+  min-width: 40%;
+  margin: auto auto 30px auto;
+  min-height: 100px;
+  animation: HomeGradient 5s ease infinite;
+  border: 2px solid transparent;
+  padding: 10px;
+}
+.Cards_Container img {
+  height: 200px;
+  border-radius: 20px;
 }
 
 :root {

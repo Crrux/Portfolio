@@ -7,16 +7,20 @@ function Logosvg({ logos: elementsToCompare }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/assets/logosvg.json");
+        const response = await fetch("/assets/database.json");
         const logosData = await response.json();
 
-        const logoElements = elementsToCompare.map((element) => {
-          if (logosData[element]) {
-            return logosData[element];
+        // Trier les éléments par "title" en ordre alphabétique
+        logosData.logos.sort((a, b) => a.title.localeCompare(b.title));
+
+        // Effectuer un mappage avec tous les éléments du tableau dans logo
+        const logoElements = logosData.logos.map((logo) => {
+          if (elementsToCompare.includes(logo.title)) {
+            return logo;
           }
           return null;
         });
-
+        console.log(logoElements);
         setData(logoElements);
       } catch (error) {
         console.error(error);
