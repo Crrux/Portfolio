@@ -307,7 +307,7 @@ button:active {
   color: white;
   background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #fff, #fff) border-box;
   background-size: 200% 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 40%;
   margin: auto auto 30px auto;
   height: -moz-fit-content;
@@ -337,7 +337,7 @@ button:active {
 }
 .Cards_Container_Info_Image img {
   width: 80%;
-  border-radius: 20px;
+  border-radius: 10px;
   max-height: 175px;
 }
 @media screen and (max-width: 767.98px) {
