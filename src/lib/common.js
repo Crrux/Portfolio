@@ -1,6 +1,7 @@
-export function storeInLocalStorage(token, userId) {
+export function storeInLocalStorage(token, userId, valid) {
   localStorage.setItem("token", token);
   localStorage.setItem("userId", userId);
+  localStorage.setItem("valid", valid);
 }
 
 export function getFromLocalStorage(item) {

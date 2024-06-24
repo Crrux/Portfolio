@@ -4,6 +4,7 @@ import Header from "./layout/Header/header";
 import Home from "./pages/Home/Home";
 import ContactForm from "./pages/ContactForm/ContactForm";
 import Login from "./pages/Login/Login";
+import SignUp from "./pages/SignUp/SignUp";
 import Error from "./pages/Error/error";
 
 import { useUser } from "./lib/customHooks";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/signup" element={<SignUp setUser={setUser} />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
