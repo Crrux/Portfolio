@@ -7,6 +7,7 @@ import "./sass/index.css";
 
 import Home from "./pages/Home/Home.jsx";
 import ContactForm from "./pages/ContactForm/ContactForm.jsx";
+import Login from "./pages/Login/Login.jsx";
 import Error from "./pages/Error/error.jsx";
 
 import Header from "./layout/Header/header.jsx";
@@ -16,9 +17,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/contact" element={<ContactForm />}></Route>
-        <Route path="*" element={<Error />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>

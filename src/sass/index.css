@@ -154,6 +154,13 @@
     background-position: 0% 50%;
   }
 }
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 .mainContact, .ContactForm_submitted {
   width: 100%;
   display: flex;

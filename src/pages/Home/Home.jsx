@@ -3,6 +3,8 @@ import Logosvg from "../../components/logosvg/logosvg";
 import ProjectCard from "../../components/project_card/project_card";
 
 function Home() {
+  const now = new Date();
+  console.log(now.getTime());
   return (
     <main className="Home">
       <section className="Home_Container">
