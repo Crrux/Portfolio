@@ -37,7 +37,11 @@ function SignUp({ setUser }) {
         setNotification({ error: true, message: "Une erreur est survenue" });
         console.log("Something went wrong during signing in: ", response);
       } else {
-        storeInLocalStorage(response.data.token, response.data.userId);
+        storeInLocalStorage(
+          response.data.token,
+          response.data.userId,
+          response.data.valid
+        );
         setUser(response.data);
         navigate("/");
       }
