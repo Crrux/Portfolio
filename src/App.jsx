@@ -27,7 +27,7 @@ function App() {
             path="/login"
             element={<Login user={user} setUser={setUser} />}
           />
-          <Route path="/signup" element={<SignUp setUser={setUser} />} />
+          {/* <Route path="/signup" element={<SignUp setUser={setUser} />} /> */}
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

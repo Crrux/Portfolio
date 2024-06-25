@@ -18,6 +18,7 @@ function Header({ user, setUser }) {
         <Link to={"/contact"}>Contact</Link>
         <>
           {!user ? (
+            // <Link to={"/login"}>Login</Link>
             ""
           ) : (
             <span
