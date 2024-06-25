@@ -7,7 +7,7 @@ import { API_ROUTES } from "../../utils/constants";
 // import { APP_ROUTES } from "../../utils/constants";
 // import { useUser } from "../../lib/customHooks";
 
-function Login({ setUser }) {
+function Login({ user, setUser }) {
   const navigate = useNavigate();
   //   const { user, authenticated } = useUser();
   //     if (user || authenticated) {
@@ -21,6 +21,9 @@ function Login({ setUser }) {
     error: false,
     message: "",
   });
+  if (user) {
+    navigate("/");
+  }
   const signIn = async () => {
     try {
       setIsLoading(true);
@@ -98,6 +101,10 @@ function Login({ setUser }) {
 }
 
 Login.propTypes = {
+  user: PropTypes.shape({
+    userId: PropTypes.string,
+    token: PropTypes.string,
+  }),
   setUser: PropTypes.func.isRequired,
 };
 
