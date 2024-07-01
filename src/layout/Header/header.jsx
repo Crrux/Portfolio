@@ -16,6 +16,7 @@ function Header({ user, setUser }) {
       <nav className="Header_nav">
         <Link to={"/"}>Home</Link>
         <Link to={"/contact"}>Contact</Link>
+        <Link to={"/test"}>Test</Link>
         <>
           {!user ? (
             // <Link to={"/login"}>Login</Link>

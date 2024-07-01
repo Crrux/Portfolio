@@ -4,10 +4,7 @@ import "primereact/resources/themes/lara-dark-teal/theme.css";
 
 import "./sass/index.css";
 
-import Home from "./pages/Home/Home.jsx";
-import ContactForm from "./pages/ContactForm/ContactForm.jsx";
-
-import Header from "./layout/Header/header.jsx";
+import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
