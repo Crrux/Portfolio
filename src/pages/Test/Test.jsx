@@ -18,8 +18,8 @@ function Test() {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        portalClassName={"portal_test"}
-        overlayClassName={"overlay_test"}
+        portalClassName={"Modal_portal_test"}
+        overlayClassName={"Modal_overlay_test"}
         id={"idmodal"}
       >
         oui
