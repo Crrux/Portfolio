@@ -280,14 +280,22 @@ button:active {
     background-position: 0% 50%;
   }
 }
+.Modal_portal_test {
+  background-color: green;
+}
 .Modal_overlay_test {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   inset: 0px;
-  background-color: green;
+  background-color: rgba(255, 255, 255, 0.35);
 }
 
 #modalcontent {
   background-color: green;
+  width: 30%;
 }
 
 .ProgressBar {
