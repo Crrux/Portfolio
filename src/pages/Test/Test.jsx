@@ -15,7 +15,15 @@ function Test() {
   return (
     <div>
       <button onClick={openModal}>Open Modal</button>
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}></Modal>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        portalClassName={"portal_test"}
+        overlayClassName={"overlay_test"}
+        id={"idmodal"}
+      >
+        oui
+      </Modal>
     </div>
   );
 }
