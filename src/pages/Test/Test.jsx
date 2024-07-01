@@ -20,7 +20,7 @@ function Test() {
         onRequestClose={closeModal}
         portalClassName={"Modal_portal_test"}
         overlayClassName={"Modal_overlay_test"}
-        id={"idmodal"}
+        id={"modalcontent"}
       >
         oui
       </Modal>

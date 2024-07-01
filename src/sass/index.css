@@ -280,6 +280,16 @@ button:active {
     background-position: 0% 50%;
   }
 }
+.Modal_overlay_test {
+  position: fixed;
+  inset: 0px;
+  background-color: green;
+}
+
+#modalcontent {
+  background-color: green;
+}
+
 .ProgressBar {
   box-sizing: border-box;
   width: 10rem;
