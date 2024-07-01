@@ -7,6 +7,7 @@ import "./sass/index.css";
 
 import Home from "./pages/Home/Home.jsx";
 import ContactForm from "./pages/ContactForm/ContactForm.jsx";
+import Test from "./pages/Test/Test.jsx";
 
 import Header from "./layout/Header/header.jsx";
 
