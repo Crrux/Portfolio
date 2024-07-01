@@ -24,6 +24,9 @@
   text-decoration: none;
   color: white;
 }
+.Header_nav span {
+  cursor: pointer;
+}
 .Header_nav_link_GithubLogo {
   display: flex;
   align-items: center;
@@ -154,6 +157,13 @@
     background-position: 0% 50%;
   }
 }
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 .mainContact, .ContactForm_submitted {
   width: 100%;
   display: flex;

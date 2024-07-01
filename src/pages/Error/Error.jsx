@@ -1,9 +1,11 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
+
 function Error() {
-  return (
-    <main className="Error">
-      <h1>error</h1>
-    </main>
-  );
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/");
+  });
 }
 
 export default Error;
