@@ -23,6 +23,7 @@ function ProjectTest() {
   return (
     <section>
       <h2>My projects</h2>
+      {/* <img src={dataLogos} */}
       <div className="Cards">
         {dataProjects &&
           dataProjects.map((project, index) => (
