@@ -9,7 +9,7 @@ function ProjectCard() {
       try {
         const response = await fetch("/assets/database.json");
         const ProjectsData = await response.json();
-        setData(ProjectsData);
+        setData(ProjectsData.projects);
         setLogos(ProjectsData.logos);
       } catch (error) {
         console.error(error);
@@ -18,13 +18,12 @@ function ProjectCard() {
 
     fetchData();
   }, []);
-
   return (
     <section>
       <h2>My projects</h2>
       <div className="Cards">
-        {dataProjects.projects &&
-          dataProjects.projects.map((project, index) => (
+        {dataProjects &&
+          dataProjects.map((project, index) => (
             <a
               href={project.lienGithub}
               target="_blank"

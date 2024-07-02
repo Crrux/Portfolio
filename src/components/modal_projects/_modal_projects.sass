@@ -1,0 +1,72 @@
+.ReactModal__Overlay
+    opacity: 0
+    transition: opacity 500ms ease-in-out
+
+    &--after-open
+        opacity: 1
+
+    &--before-close
+        opacity: 0
+.Modal
+    &_portal_test
+        background-color: green
+    &_overlay_test
+        position: fixed
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        inset: 0px
+        background-color: rgba(255, 255, 255, 0.35)
+        // background-color: green
+
+#modalcontent
+    background-color: green
+    img
+        max-width: 100%
+
+.Button_ModalProject
+    position: relative
+    display: flex
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#d80d0d, #d80d0d) border-box
+    background-size: 200% 100%
+    border-radius: 15px
+    width: 300px
+    height: 300px
+    margin: auto auto 30px auto
+    animation: HomeGradient 5s ease infinite
+    border: 2px solid transparent
+    padding: 1px
+    cursor: pointer
+    @media screen and ( max-width: $layout-breakpoint-small )
+        width: 80%
+        h3
+            font-size: 0.8rem
+    &:hover
+        width: 500px
+    &_Background
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 14px
+        margin: 0
+        padding: 0.3px
+        overflow: hidden
+        img
+            // width: 100%
+            height: 100%
+            // border-radius: 12px
+
+    &_Hover
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: black
+        height: 100%
+        width: 100%
+        border-radius: 14px
+        z-index: 2
+        margin: 0
+        padding: 0
