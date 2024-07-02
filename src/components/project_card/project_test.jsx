@@ -17,13 +17,12 @@ function ProjectTest() {
         console.error(error);
       }
     };
-
     fetchData();
   }, []);
   return (
     <section>
       <h2>My projects</h2>
-      {/* <img src={dataLogos} */}
+      {/* <img src={dataLogos.find((logo) => logo.title === "React").URL} /> */}
       <div className="Cards">
         {dataProjects &&
           dataProjects.map((project, index) => (
