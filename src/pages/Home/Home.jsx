@@ -8,7 +8,11 @@ function Home() {
     <main className="Home">
       <section className="Home_Container">
         <div className="Home_Presentation">
-          <img src={photo} className="Home_Presentation_Photo" />
+          <img
+            src={photo}
+            alt="Mountain landscape with Arthur and a dog"
+            className="Home_Presentation_Photo"
+          />
           <div>
             <h1>Welcome.</h1>
             <p>

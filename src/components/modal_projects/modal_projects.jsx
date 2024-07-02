@@ -17,7 +17,7 @@ function ModalCmpnt({ project, dataLogos }) {
     <>
       <button className="Button_ModalProject" onClick={openModal}>
         <div className="Button_ModalProject_Background">
-          <img src={project.imageURL}></img>
+          <img src={project.imageURL} alt={`Image of ${project.name}`}></img>
         </div>
         <div className="Button_ModalProject_Hover">
           <p>{project.name}</p>

@@ -37,7 +37,11 @@ function Header({ user, setUser }) {
           target="_blank"
           className="Header_nav_link_GithubLogo"
         >
-          <img src={githubIcon} className="Header_nav_GithubLogo" />
+          <img
+            src={githubIcon}
+            className="Header_nav_GithubLogo"
+            alt="Github Logo"
+          />
         </a>
       </nav>
     </header>
