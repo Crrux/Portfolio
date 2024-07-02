@@ -49,7 +49,13 @@ function ModalCmpnt({ project, dataLogos }) {
           },
         }}
       >
-        <h3>{project.name}</h3>
+        <header className="Modal_Header">
+          <h3>{project.name}</h3>
+          <button onClick={closeModal} className="button_exit_modal">
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+        </header>
+
         <img src={project.imageURL}></img>
         <p>{project.description}</p>
         {project.used.map((logoName, index) => {

@@ -411,6 +411,24 @@ button:active {
 #modalcontent img {
   max-width: 100%;
 }
+#modalcontent .button_exit_modal {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.Modal_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Modal_Header button {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.Modal_Header h3, .Modal_Header i {
+  font-size: 2rem;
+}
 
 .Button_ModalProject {
   position: relative;
