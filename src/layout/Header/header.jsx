@@ -35,6 +35,7 @@ function Header({ user, setUser }) {
         <a
           href="https://github.com/Crrux"
           target="_blank"
+          rel="noopener noreferrer"
           className="Header_nav_link_GithubLogo"
         >
           <img

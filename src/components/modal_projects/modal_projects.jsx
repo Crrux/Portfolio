@@ -51,7 +51,11 @@ function ModalCmpnt({ project, dataLogos }) {
         <header className="Modal_Header">
           <h3>{project.name}</h3>
           <div>
-            <a href={project.lienGithub} target="_blank">
+            <a
+              href={project.lienGithub}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={dataLogos.find((logo) => logo.title === "Github").URL}
                 className="Modal_Header_GithubLogo"
