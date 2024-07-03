@@ -22,10 +22,6 @@ function ProjectCard() {
   return (
     <section className="Projects">
       <h2>My projects</h2>
-      <img
-        // src={dataLogos.find((logo) => logo.title === "React").URL}
-        className="logoReact"
-      />
       <div className="Projects_Cards">
         {dataProjects &&
           dataProjects.map((project, index) => (

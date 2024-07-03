@@ -50,6 +50,13 @@ function ModalCmpnt({ project, dataLogos }) {
       >
         <header className="Modal_Header">
           <h3>{project.name}</h3>
+          <a href={project.lienGithub} target="_blank">
+            <img
+              src={dataLogos.find((logo) => logo.title === "Github").URL}
+              className="Modal_Header_GithubLogo"
+            />
+          </a>
+
           <button onClick={closeModal} className="button_exit_modal">
             <i className="fa-solid fa-xmark"></i>
           </button>

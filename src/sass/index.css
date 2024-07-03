@@ -358,6 +358,9 @@ button:active {
   justify-content: space-between;
   align-items: center;
 }
+.Modal_Header_GithubLogo {
+  width: 2rem;
+}
 .Modal_Header button {
   height: -moz-fit-content;
   height: fit-content;
