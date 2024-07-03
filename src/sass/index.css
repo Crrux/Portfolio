@@ -356,7 +356,8 @@ button:active {
 .Modal_Header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
 .Modal_Header_GithubLogo {
   width: 2rem;
@@ -368,8 +369,16 @@ button:active {
 .Modal_Header button:hover {
   animation: rotate-down 0.4s ease-in-out forwards;
 }
-.Modal_Header h3, .Modal_Header i {
+.Modal_Header i {
   font-size: 2rem;
+}
+.Modal_Header h3 {
+  margin: 0;
+  padding: 0;
+}
+.Modal_Header div {
+  display: flex;
+  align-items: flex-start;
 }
 
 .Button_ModalProject {

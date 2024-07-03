@@ -32,15 +32,22 @@
     &_Header
         display: flex
         justify-content: space-between
-        align-items: center
+        align-items: flex-start
+        margin-bottom: 2rem
         &_GithubLogo
             width: 2rem
         button
             height: fit-content
             &:hover
                 animation: rotate-down 0.4s ease-in-out forwards
-        h3, i
+        i
             font-size: 2rem
+        h3
+            margin: 0
+            padding: 0
+        div
+            display: flex
+            align-items: flex-start
 
 .Button_ModalProject
     position: relative
