@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 
+import Modal from "../modal_projects/modal_projects";
+
 function ProjectCard() {
   const [dataProjects, setData] = useState([]);
-  const [logos, setLogos] = useState([]);
+  const [dataLogos, setLogos] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,50 +17,19 @@ function ProjectCard() {
         console.error(error);
       }
     };
-
     fetchData();
   }, []);
   return (
-    <section>
+    <section className="Projects">
       <h2>My projects</h2>
-      <div className="Cards">
+      <img
+        // src={dataLogos.find((logo) => logo.title === "React").URL}
+        className="logoReact"
+      />
+      <div className="Projects_Cards">
         {dataProjects &&
           dataProjects.map((project, index) => (
-            <a
-              href={project.lienGithub}
-              target="_blank"
-              key={index}
-              className="Cards_Container"
-            >
-              <article>
-                <h3>{project.name}</h3>
-                <div className="Cards_Container_Info">
-                  <div className="Cards_Container_Info_Image">
-                    <img
-                      src={project.imageURL}
-                      alt={`Image of ${project.name}`}
-                    />
-                  </div>
-                  <div className="Cards_Container_Info_Description">
-                    <p>{project.description}</p>
-                    <div className="Cards_Container_Info_Description_imgcontainer">
-                      {project.used.map((logoName, index) => {
-                        const logo = logos.find((l) => l.title === logoName);
-                        return (
-                          <img
-                            key={index}
-                            className="logo"
-                            src={logo.URL}
-                            alt={logo.alt}
-                            title={logo.title}
-                          />
-                        );
-                      })}
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </a>
+            <Modal key={index} project={project} dataLogos={dataLogos}></Modal>
           ))}
       </div>
     </section>

@@ -1,54 +1,8 @@
-.Cards
-
-    flex-wrap: wrap
-    margin-top: 20px
+.Projects
     display: flex
+    flex-direction: column
     width: 100%
-    &_Container
-        text-decoration: none
-        color: white
-        background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#fff, #fff) border-box
-        background-size: 200% 100%
-        border-radius: 15px
-        width: 40%
-        margin: auto auto 30px auto
-        height: fit-content
-        animation: HomeGradient 5s ease infinite
-        border: 2px solid transparent
-        padding: 10px
-        @media screen and ( max-width: $layout-breakpoint-small )
-            width: 80%
-            h3
-                font-size: 0.8rem
-        &_Info
-            display: flex
-            justify-content: space-between
-            align-items: center
-            height: 175px
-            @media screen and ( max-width: $layout-breakpoint-small )
-                flex-direction: column
-            &_Image
-                img
-                    width: 80%
-                    border-radius: 10px
-                    max-height: 175px
-                    @media screen and ( max-width: $layout-breakpoint-small )
-                        width: 40%
-                        border-radius: 10px
-            &_Image, &_Description
-                flex-grow: 1
-                width: 30%
-                @media screen and ( max-width: $layout-breakpoint-small )
-                    width: 100%
-            &_Description
-                font-size: 0.7rem
-                &_imgcontainer
-                    display: flex
-                    justify-content: center
-                    flex-wrap: wrap
-                    width: 100%
-                    background: rgb(33,33,33)
-                    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(130,130,130,1) 50%, rgba(33,33,33,1) 100%)
-                    margin-bottom: 10px
-                    img
-                        padding: 5px
+    &_Cards
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        margin-top: 20px

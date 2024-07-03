@@ -1,7 +1,7 @@
 import photo from "/assets/photo.jpg";
 import Logosvg from "../../components/logosvg/logosvg";
-// import ProjectCard from "../../components/project_card/project_card";
-import ProjectTest from "../../components/project_card/project_test";
+import ProjectCard from "../../components/project_card/project_card";
+// import ProjectTest from "../../components/project_card/project_test";
 
 function Home() {
   return (
@@ -57,7 +57,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <ProjectTest />
+      <ProjectCard />
     </main>
   );
 }

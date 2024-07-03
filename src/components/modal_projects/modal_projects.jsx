@@ -20,7 +20,6 @@ function ModalCmpnt({ project, dataLogos }) {
           <img src={project.imageURL} alt={`Image of ${project.name}`}></img>
         </div>
         <div className="Button_ModalProject_Hover">
-          <p>{project.name}</p>
           <p>
             <i className="fa-solid fa-up-right-from-square"></i>
           </p>

@@ -36,14 +36,14 @@
         button
             height: fit-content
             &:hover
-                animation: rotate-down 0.2s linear forwards
+                animation: rotate-down 0.4s ease-in-out forwards
         h3, i
             font-size: 2rem
 
 .Button_ModalProject
     position: relative
     display: flex
-    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#d80d0d, #d80d0d) border-box
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#0d10d8, #0d10d8) border-box
     background-size: 200% 100%
     border-radius: 15px
     width: 300px
@@ -57,8 +57,7 @@
         width: 80%
         h3
             font-size: 0.8rem
-    &:hover
-        width: 500px
+
     &_Background
         position: absolute
         top: 0
@@ -70,30 +69,28 @@
         padding: 0.3px
         overflow: hidden
         img
-            // width: 100%
             height: 100%
-            // border-radius: 12px
 
     &_Hover
+        position: absolute
+        top: 0
+        left: 0
         display: flex
         align-items: center
         justify-content: center
-        background-color: black
+        background-color: rgba(0, 0, 0, 0.623)
         height: 100%
         width: 100%
         border-radius: 14px
         z-index: 2
         margin: 0
         padding: 0
+        opacity: 0
+        &:hover
+            opacity: 100
 
 @keyframes rotate-down
     from
         transform: rotate(360deg)
     to
         transform: rotate(180deg)
-
-@keyframes rotate-up
-    from
-        transform: rotate(180deg)
-    to
-        transform: rotate(360deg)
