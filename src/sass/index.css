@@ -318,76 +318,6 @@ button:active {
   gap: 15px;
 }
 
-.ReactModal__Overlay {
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-.ReactModal__Overlay--after-open {
-  opacity: 1;
-}
-.ReactModal__Overlay--before-close {
-  opacity: 0;
-}
-
-.Modal_portal_test {
-  background-color: green;
-}
-.Modal_overlay_test {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  inset: 0px;
-  background-color: rgba(255, 255, 255, 0.35);
-}
-
-#modalcontent {
-  background-color: green;
-}
-#modalcontent img {
-  max-width: 100%;
-}
-#modalcontent .button_exit_modal {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.Modal_Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
-.Modal_Header_TitleContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.Modal_Header_TitleContainer h3 {
-  margin: 0;
-  padding: 0;
-}
-.Modal_Header_LinksContainer_GithubLogo {
-  width: 2rem;
-}
-.Modal_Header_LinksContainer button {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.Modal_Header_LinksContainer button:hover {
-  animation: rotate-down 0.4s ease-in-out forwards;
-}
-.Modal_Header_LinksContainer button i {
-  font-size: 2rem;
-}
-.Modal_Header div {
-  display: flex;
-  align-items: flex-start;
-}
-
 .Button_ModalProject {
   position: relative;
   display: flex;
@@ -470,6 +400,76 @@ button:active {
     transform: rotate(180deg);
   }
 }
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.Modal_portal_test {
+  background-color: green;
+}
+.Modal_overlay_test {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  inset: 0px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#modalcontent {
+  background-color: green;
+}
+#modalcontent img {
+  max-width: 100%;
+}
+#modalcontent .button_exit_modal {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.Modal_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.Modal_Header_TitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Modal_Header_TitleContainer h3 {
+  margin: 0;
+  padding: 0;
+}
+.Modal_Header_LinksContainer_GithubLogo {
+  width: 2rem;
+}
+.Modal_Header_LinksContainer button {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.Modal_Header_LinksContainer button:hover {
+  animation: rotate-down 0.4s ease-in-out forwards;
+}
+.Modal_Header_LinksContainer button i {
+  font-size: 2rem;
+}
+.Modal_Header div {
+  display: flex;
+  align-items: flex-start;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

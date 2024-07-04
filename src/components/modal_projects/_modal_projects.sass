@@ -1,61 +1,3 @@
-.ReactModal__Overlay
-    opacity: 0
-    transition: opacity 500ms ease-in-out
-
-    &--after-open
-        opacity: 1
-
-    &--before-close
-        opacity: 0
-.Modal
-    &_portal_test
-        background-color: green
-    &_overlay_test
-        position: fixed
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 100%
-        inset: 0px
-        background-color: rgba(255, 255, 255, 0.35)
-        // background-color: green
-
-#modalcontent
-    background-color: green
-    img
-        max-width: 100%
-    .button_exit_modal
-        cursor: pointer
-        background: none
-        border: none
-.Modal
-    &_Header
-        display: flex
-        justify-content: space-between
-        align-items: flex-start
-        margin-bottom: 2rem
-        &_TitleContainer
-            display: flex
-            flex-direction: column
-            align-items: flex-start
-            justify-content: center
-            h3
-                margin: 0
-                padding: 0
-        &_LinksContainer
-            &_GithubLogo
-                width: 2rem
-            button
-                height: fit-content
-                &:hover
-                    animation: rotate-down 0.4s ease-in-out forwards
-                i
-                    font-size: 2rem
-
-        div
-            display: flex
-            align-items: flex-start
-
 .Button_ModalProject
     position: relative
     display: flex
@@ -126,3 +68,61 @@
         transform: rotate(360deg)
     to
         transform: rotate(180deg)
+
+.ReactModal__Overlay
+    opacity: 0
+    transition: opacity 500ms ease-in-out
+
+    &--after-open
+        opacity: 1
+
+    &--before-close
+        opacity: 0
+.Modal
+    &_portal_test
+        background-color: green
+    &_overlay_test
+        position: fixed
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        inset: 0px
+        background-color: rgba(255, 255, 255, 0.35)
+        // background-color: green
+
+#modalcontent
+    background-color: green
+    img
+        max-width: 100%
+    .button_exit_modal
+        cursor: pointer
+        background: none
+        border: none
+.Modal
+    &_Header
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 2rem
+        &_TitleContainer
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            h3
+                margin: 0
+                padding: 0
+        &_LinksContainer
+            &_GithubLogo
+                width: 2rem
+            button
+                height: fit-content
+                &:hover
+                    animation: rotate-down 0.4s ease-in-out forwards
+                i
+                    font-size: 2rem
+
+        div
+            display: flex
+            align-items: flex-start
