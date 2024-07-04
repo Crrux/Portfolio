@@ -47,7 +47,7 @@
   width: 100%;
 }
 .Home_Presentation_Container {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
