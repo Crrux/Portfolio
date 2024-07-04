@@ -21,6 +21,7 @@ function Header({ user, setUser }) {
         >
           Home
         </Link>
+        {location.pathname === "/" ? <a href="#Projects">Projects</a> : ""}
         <Link
           to={"/contact"}
           className={location.pathname === "/contact" ? "activeLink" : ""}
