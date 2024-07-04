@@ -19,6 +19,10 @@ function ModalCmpnt({ project, dataLogos }) {
         <div className="Button_ModalProject_Background">
           <img src={project.imageURL} alt={`Image of ${project.name}`}></img>
         </div>
+        <div className="Button_ModalProject_Title">
+          <p>{project.name}</p>
+          {project.origin ? <p>{project.origin}</p> : ""}
+        </div>
         <div className="Button_ModalProject_Hover">
           <p>
             <i className="fa-solid fa-up-right-from-square"></i>
@@ -49,8 +53,12 @@ function ModalCmpnt({ project, dataLogos }) {
         }}
       >
         <header className="Modal_Header">
-          <h3>{project.name}</h3>
-          <div>
+          <div className="Modal_Header_TitleContainer">
+            <h3>{project.name}</h3>
+            {project.origin ? <p>{project.origin}</p> : ""}
+          </div>
+
+          <div className="Modal_Header_LinksContainer">
             <a
               href={project.lienGithub}
               target="_blank"
@@ -58,10 +66,9 @@ function ModalCmpnt({ project, dataLogos }) {
             >
               <img
                 src={dataLogos.find((logo) => logo.title === "Github").URL}
-                className="Modal_Header_GithubLogo"
+                className="Modal_Header_LinksContainer_GithubLogo"
               />
             </a>
-
             <button onClick={closeModal} className="button_exit_modal">
               <i className="fa-solid fa-xmark"></i>
             </button>
