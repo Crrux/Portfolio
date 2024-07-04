@@ -20,7 +20,7 @@ function ProjectCard() {
     fetchData();
   }, []);
   return (
-    <section className="Projects">
+    <section className="Projects" id="Projects">
       <h2>My projects</h2>
       <div className="Projects_Cards">
         {dataProjects &&

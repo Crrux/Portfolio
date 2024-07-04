@@ -46,11 +46,19 @@
   justify-content: center;
   width: 100%;
 }
+.Home_Presentation_Container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .Home_Container {
   background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   background-size: 200% 100%;
   border-radius: 20px;
   width: 65%;
+  height: -moz-fit-content;
+  height: fit-content;
   animation: HomeGradient 5s ease infinite;
   border: 2px solid transparent;
 }

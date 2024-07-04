@@ -1,8 +1,9 @@
 import githubIcon from "/assets/svg/github-icon.svg";
 import PropTypes from "prop-types";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Header({ user, setUser }) {
+  const location = useLocation();
   const navigate = useNavigate();
   const disconnect = () => {
     localStorage.clear();
@@ -14,9 +15,24 @@ function Header({ user, setUser }) {
     <header className="Header">
       <p>MURSCH Arthur</p>
       <nav className="Header_nav">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/contact"}>Contact</Link>
-        <Link to={"/test"}>Test</Link>
+        <Link
+          to={"/"}
+          className={location.pathname === "/" ? "activeLink" : ""}
+        >
+          Home
+        </Link>
+        <Link
+          to={"/contact"}
+          className={location.pathname === "/contact" ? "activeLink" : ""}
+        >
+          Contact
+        </Link>
+        <Link
+          to={"/test"}
+          className={location.pathname === "/test" ? "activeLink" : ""}
+        >
+          Test
+        </Link>
         <>
           {!user ? (
             // <Link to={"/login"}>Login</Link>
