@@ -60,6 +60,17 @@ function ModalCmpnt({ project, dataLogos }) {
           </div>
 
           <div className="Modal_Header_LinksContainer">
+            {project.lienWeb ? (
+              <a
+                href={project.lienWeb}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-solid fa-globe Modal_Header_LinksContainer_WebLogo"></i>
+              </a>
+            ) : (
+              ""
+            )}
             <a
               href={project.lienGithub}
               target="_blank"

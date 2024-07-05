@@ -459,6 +459,16 @@ button:active {
   margin: 0;
   padding: 0;
 }
+.Modal_Header_LinksContainer {
+  gap: 15px;
+}
+.Modal_Header_LinksContainer_WebLogo {
+  font-size: 2rem;
+  color: white;
+}
+.Modal_Header_LinksContainer_WebLogo:hover {
+  color: violet;
+}
 .Modal_Header_LinksContainer_GithubLogo {
   width: 2rem;
 }
@@ -500,7 +510,7 @@ button:active {
 }
 .Modal_Logos_Container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: 10px;
   width: -moz-fit-content;
   width: fit-content;
