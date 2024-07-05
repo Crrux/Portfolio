@@ -324,7 +324,7 @@ button:active {
 }
 @media screen and (max-width: 767.98px) {
   .Button_ModalProject {
-    max-width: 300px;
+    width: 100%;
     margin: 0;
   }
   .Button_ModalProject h3 {
@@ -345,7 +345,7 @@ button:active {
   overflow: hidden;
 }
 .Button_ModalProject_Background img {
-  width: 500px;
+  width: 100%;
   min-height: 300px;
 }
 .Button_ModalProject_Title {
