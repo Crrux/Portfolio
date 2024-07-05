@@ -292,7 +292,6 @@ button:active {
 }
 @media screen and (max-width: 767.98px) {
   .logo {
-    padding-left: 15px;
     height: 25px;
   }
 }
@@ -478,8 +477,11 @@ button:active {
   width: 100%;
   justify-content: center;
   margin-bottom: 2rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .Modal_Project_ImgContainer img {
+  max-height: 40vh;
   border-radius: 10px;
 }
 .Modal_Logos_Container {
