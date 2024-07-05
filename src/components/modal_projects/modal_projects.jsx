@@ -74,21 +74,25 @@ function ModalCmpnt({ project, dataLogos }) {
             </button>
           </div>
         </header>
-
-        <img src={project.imageURL}></img>
-        <p>{project.description}</p>
-        {project.used.map((logoName, index) => {
-          const logo = dataLogos.find((l) => l.title === logoName);
-          return (
-            <img
-              key={index}
-              className="logo"
-              src={logo.URL}
-              alt={logo.alt}
-              title={logo.title}
-            />
-          );
-        })}
+        <section>
+          <img src={project.imageURL}></img>
+          <p>{project.description}</p>
+          <div className="Modal_LogoContainer">
+            {" "}
+            {project.used.map((logoName, index) => {
+              const logo = dataLogos.find((l) => l.title === logoName);
+              return (
+                <img
+                  key={index}
+                  className="Modal_logo"
+                  src={logo.URL}
+                  alt={logo.alt}
+                  title={logo.title}
+                />
+              );
+            })}
+          </div>
+        </section>
       </Modal>
     </>
   );

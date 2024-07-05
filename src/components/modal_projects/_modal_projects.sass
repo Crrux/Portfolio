@@ -78,6 +78,15 @@
 
     &--before-close
         opacity: 0
+
+#modalcontent
+    background-color: green
+    img
+        max-width: 100%
+    .button_exit_modal
+        cursor: pointer
+        background: none
+        border: none
 .Modal
     &_portal_test
         background-color: green
@@ -89,17 +98,6 @@
         width: 100%
         inset: 0px
         background-color: rgba(255, 255, 255, 0.35)
-        // background-color: green
-
-#modalcontent
-    background-color: green
-    img
-        max-width: 100%
-    .button_exit_modal
-        cursor: pointer
-        background: none
-        border: none
-.Modal
     &_Header
         display: flex
         justify-content: space-between
@@ -126,3 +124,10 @@
         div
             display: flex
             align-items: flex-start
+    &_LogoContainer
+        display: flex
+        flex-direction: row-reverse
+        gap: 10px
+        width: fit-content
+    &_logo
+        height: 30px
