@@ -91,12 +91,12 @@ function ModalCmpnt({ project, dataLogos }) {
             <img src={project.imageURL}></img>
           </div>
           <div className="Modal_Project_Description">
-            <h3>Description :</h3>
+            <h4>Description :</h4>
             <p>{project.description}</p>
           </div>
 
           <div className="Modal_Logos">
-            <h3>Language / framework used :</h3>
+            <h4>Language / framework used :</h4>
             <div className="Modal_Logos_Container">
               {" "}
               {project.used.map((logoName, index) => {
