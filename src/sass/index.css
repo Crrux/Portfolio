@@ -476,7 +476,29 @@ button:active {
   display: flex;
   align-items: flex-start;
 }
-.Modal_LogoContainer {
+.Modal_Project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Modal_Project_ImgContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.Modal_Project_ImgContainer img {
+  border-radius: 10px;
+}
+.Modal_Logos {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.Modal_Logos_Container {
   display: flex;
   flex-direction: row-reverse;
   gap: 10px;
@@ -484,7 +506,11 @@ button:active {
   width: fit-content;
 }
 .Modal_logo {
-  height: 30px;
+  height: 50px;
+  padding: 5px;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 10px;
 }
 
 :root {

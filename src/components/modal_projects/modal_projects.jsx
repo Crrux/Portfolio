@@ -45,7 +45,8 @@ function ModalCmpnt({ project, dataLogos }) {
             WebkitOverflowScrolling: "touch",
             borderRadius: "4px",
             outline: "none",
-            height: "80vh",
+            height: "fit-content",
+            maxHeight: "80vh",
             padding: "20px",
             width: "70%",
             zIndex: "99",
@@ -74,65 +75,38 @@ function ModalCmpnt({ project, dataLogos }) {
             </button>
           </div>
         </header>
-        <section>
-          <img src={project.imageURL}></img>
-          <p>{project.description}</p>
-          <div className="Modal_LogoContainer">
-            {" "}
-            {project.used.map((logoName, index) => {
-              const logo = dataLogos.find((l) => l.title === logoName);
-              return (
-                <img
-                  key={index}
-                  className="Modal_logo"
-                  src={logo.URL}
-                  alt={logo.alt}
-                  title={logo.title}
-                />
-              );
-            })}
+        <section className="Modal_Project">
+          <div className="Modal_Project_ImgContainer">
+            <img src={project.imageURL}></img>
+          </div>
+          <div className="Modal_Project_Description">
+            <h3>Description :</h3>
+            <p>{project.description}</p>
+          </div>
+
+          <div className="Modal_Logos">
+            <h3>Language / framework used :</h3>
+            <div className="Modal_Logos_Container">
+              {" "}
+              {project.used.map((logoName, index) => {
+                const logo = dataLogos.find((l) => l.title === logoName);
+                return (
+                  <img
+                    key={index}
+                    className="Modal_logo"
+                    src={logo.URL}
+                    alt={logo.alt}
+                    title={logo.title}
+                  />
+                );
+              })}
+            </div>
           </div>
         </section>
       </Modal>
     </>
   );
 }
-
-// <a
-//   href={project.lienGithub}
-//   target="_blank"
-//   key={index}
-//   className="Cards_Container"
-// >
-//   <article>
-//     <h3>{project.name}</h3>
-//     <div className="Cards_Container_Info">
-//       <div className="Cards_Container_Info_Image">
-//         <img
-//           src={project.imageURL}
-//           alt={`Image of ${project.name}`}
-//         />
-//       </div>
-//       <div className="Cards_Container_Info_Description">
-//         <p>{project.description}</p>
-//         <div className="Cards_Container_Info_Description_imgcontainer">
-//           {project.used.map((logoName, index) => {
-//             const logo = logos.find((l) => l.title === logoName);
-//             return (
-//               <img
-//                 key={index}
-//                 className="logo"
-//                 src={logo.URL}
-//                 alt={logo.alt}
-//                 title={logo.title}
-//               />
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </div>
-//   </article>
-// </a>
 
 ModalCmpnt.propTypes = {
   project: PropTypes.object.isRequired,
