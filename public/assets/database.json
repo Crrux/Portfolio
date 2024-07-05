@@ -97,7 +97,7 @@
       "used": ["HTML", "CSS", "Javascript"]
     },
     {
-      "name": "Back-end for Mon Vieux Grimoire",
+      "name": "Back-end for 'Mon Vieux Grimoire'",
       "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/grimoire.webp",
       "lienGithub": "https://github.com/Crrux/P7-BackEnd",
