@@ -12,7 +12,6 @@
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "axios": "^1.7.2",
-    "bootstrap": "^5.3.3",
     "modal": "^1.2.0",
     "mysql": "^2.18.1",
     "primereact": "^10.6.6",
