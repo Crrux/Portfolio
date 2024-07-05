@@ -20,7 +20,13 @@ function Form() {
         <form onSubmit={handleSubmit} className="ContactForm">
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
-            <input id="email" type="email" name="email" required />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              autoComplete="email"
+              required
+            />
             <ValidationError
               prefix="Email"
               field="email"
