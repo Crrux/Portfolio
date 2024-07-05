@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 import Modal from "react-modal";
+import Logosvg from "../logosvg/logosvg";
 
 Modal.setAppElement("#root");
 
@@ -98,19 +99,7 @@ function ModalCmpnt({ project, dataLogos }) {
           <div className="Modal_Logos">
             <h4>Language / framework used :</h4>
             <div className="Modal_Logos_Container">
-              {" "}
-              {project.used.map((logoName, index) => {
-                const logo = dataLogos.find((l) => l.title === logoName);
-                return (
-                  <img
-                    key={index}
-                    className="Modal_logo"
-                    src={logo.URL}
-                    alt={logo.alt}
-                    title={logo.title}
-                  />
-                );
-              })}
+              <Logosvg logos={project.used} />
             </div>
           </div>
         </section>

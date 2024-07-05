@@ -108,8 +108,6 @@
   width: 40%;
   height: 60px;
   margin: 10px;
-  background: rgb(33, 33, 33);
-  background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
 }
 @media screen and (max-width: 1150px) {
   .Home_Language_pcontainer {
@@ -150,10 +148,6 @@
     width: 100%;
   }
 }
-.Home_Language_pcontainer_2 img {
-  padding: 0;
-}
-
 @keyframes HomeGradient {
   0% {
     background-position: 0% 50%;
@@ -290,7 +284,11 @@ button:active {
 }
 .logo {
   padding-left: 25px;
-  height: 40px;
+  height: 50px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px black solid;
+  border-radius: 10px;
 }
 @media screen and (max-width: 767.98px) {
   .logo {
@@ -486,13 +484,6 @@ button:active {
 .Modal_Project_ImgContainer img {
   border-radius: 10px;
 }
-.Modal_Logos {
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 .Modal_Logos_Container {
   display: flex;
   flex-direction: row;
@@ -503,8 +494,8 @@ button:active {
 .Modal_logo {
   height: 50px;
   padding: 5px;
-  background-color: white;
-  border: 2px black solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px black solid;
   border-radius: 10px;
 }
 
