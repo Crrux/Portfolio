@@ -12,7 +12,8 @@
     padding: 1px
     cursor: pointer
     @media screen and ( max-width: $layout-breakpoint-small )
-        width: 100%
+        width: 350px
+        height: 250px
         margin: 0
 
         h3
@@ -32,6 +33,8 @@
         img
             width: 100%
             min-height: 300px
+            @media screen and ( max-width: $layout-breakpoint-small )
+                min-height: 250px
     &_Title
         border-radius: 15px
         z-index: 2
