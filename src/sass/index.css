@@ -414,16 +414,7 @@ button:active {
   opacity: 0;
 }
 
-#modalcontent img {
-  max-width: 100%;
-}
-#modalcontent .button_exit_modal {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.Modal_overlay_test {
+.Modal_overlay {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -431,6 +422,23 @@ button:active {
   width: 100%;
   inset: 0px;
   background-color: rgba(255, 255, 255, 0.35);
+  z-index: 98;
+}
+.Modal_Content {
+  position: static;
+  inset: 40px;
+  border: 0px solid #ccc;
+  background-color: #2e2e2e;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 80vh;
+  padding: 20px;
+  width: 70%;
+  z-index: 99;
 }
 .Modal_Header {
   display: flex;
@@ -465,6 +473,9 @@ button:active {
 .Modal_Header_LinksContainer button {
   height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 .Modal_Header_LinksContainer button:hover {
   animation: rotate-down 0.4s ease-in-out forwards;
@@ -491,6 +502,7 @@ button:active {
   height: fit-content;
 }
 .Modal_Project_ImgContainer img {
+  max-width: 100%;
   max-height: 40vh;
   border-radius: 10px;
 }
