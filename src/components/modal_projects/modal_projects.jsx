@@ -16,7 +16,12 @@ function ModalCmpnt({ project, dataLogos }) {
   }
   return (
     <>
-      <button className="Button_ModalProject" onClick={openModal} role="button">
+      <button
+        className="Button_ModalProject"
+        onClick={openModal}
+        role="button"
+        aria-label="Open Modal for this project"
+      >
         <div className="Button_ModalProject_Background">
           <img src={project.imageURL} alt={`Image of ${project.name}`}></img>
         </div>
