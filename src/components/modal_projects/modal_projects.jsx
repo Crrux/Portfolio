@@ -70,6 +70,7 @@ function ModalCmpnt({ project, dataLogos }) {
               onClick={closeModal}
               className="button_exit_modal"
               role="button"
+              aria-label="Exit Modal"
             >
               <i className="fa-solid fa-xmark"></i>
             </button>
