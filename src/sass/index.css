@@ -12,7 +12,7 @@
 @media screen and (max-width: 767.98px) {
   .Header {
     font-size: 10px;
-    width: 90%;
+    width: 100%;
   }
 }
 .Header_nav {
@@ -534,6 +534,11 @@ button:active {
   min-height: 100vh;
   padding: 0 2rem 2rem 2rem;
   text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  #root {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
 }
 
 body {
