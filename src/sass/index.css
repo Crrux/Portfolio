@@ -414,9 +414,6 @@ button:active {
   opacity: 0;
 }
 
-#modalcontent {
-  background-color: green;
-}
 #modalcontent img {
   max-width: 100%;
 }
@@ -426,9 +423,6 @@ button:active {
   border: none;
 }
 
-.Modal_portal_test {
-  background-color: green;
-}
 .Modal_overlay_test {
   position: fixed;
   display: flex;
