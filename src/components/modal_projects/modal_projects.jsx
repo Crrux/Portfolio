@@ -63,6 +63,7 @@ function ModalCmpnt({ project, dataLogos }) {
               <img
                 src={dataLogos.find((logo) => logo.title === "Github").URL}
                 className="Modal_Header_LinksContainer_GithubLogo"
+                alt="Github Logo"
               />
             </a>
             <button onClick={closeModal} className="button_exit_modal">
