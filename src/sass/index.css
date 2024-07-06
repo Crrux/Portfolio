@@ -312,6 +312,7 @@ button:active {
 @media screen and (max-width: 767.98px) {
   .Projects_Cards {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 30px;
   }
 }
 
