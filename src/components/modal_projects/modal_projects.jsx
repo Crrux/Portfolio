@@ -16,7 +16,7 @@ function ModalCmpnt({ project, dataLogos }) {
   }
   return (
     <>
-      <button className="Button_ModalProject" onClick={openModal}>
+      <button className="Button_ModalProject" onClick={openModal} role="button">
         <div className="Button_ModalProject_Background">
           <img src={project.imageURL} alt={`Image of ${project.name}`}></img>
         </div>
@@ -66,7 +66,11 @@ function ModalCmpnt({ project, dataLogos }) {
                 alt="Github Logo"
               />
             </a>
-            <button onClick={closeModal} className="button_exit_modal">
+            <button
+              onClick={closeModal}
+              className="button_exit_modal"
+              role="button"
+            >
               <i className="fa-solid fa-xmark"></i>
             </button>
           </div>
