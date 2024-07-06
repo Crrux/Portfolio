@@ -449,6 +449,7 @@ button:active {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  font-size: 0.7rem;
 }
 .Modal_Header_TitleContainer h3 {
   margin: 0;
