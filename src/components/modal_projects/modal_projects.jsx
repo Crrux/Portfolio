@@ -36,23 +36,6 @@ function ModalCmpnt({ project, dataLogos }) {
         portalClassName={"Modal_portal"}
         overlayClassName={"Modal_overlay"}
         className={"Modal_Content"}
-        // style={{
-        //   overlay: { zIndex: "98" },
-        //   content: {
-        //     position: "static",
-        //     border: "0px solid #ccc",
-        //     background: "#2e2e2e",
-        //     overflow: "auto",
-        //     WebkitOverflowScrolling: "touch",
-        //     borderRadius: "4px",
-        //     outline: "none",
-        //     height: "fit-content",
-        //     maxHeight: "80vh",
-        //     padding: "20px",
-        //     width: "70%",
-        //     zIndex: "99",
-        //   },
-        // }}
       >
         <header className="Modal_Header">
           <div className="Modal_Header_TitleContainer">
