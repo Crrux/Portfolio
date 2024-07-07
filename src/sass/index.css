@@ -292,7 +292,7 @@ button:active {
 }
 @media screen and (max-width: 767.98px) {
   .logo {
-    height: 25px;
+    height: 2.5rem;
   }
 }
 
@@ -332,9 +332,9 @@ button:active {
 }
 @media screen and (max-width: 767.98px) {
   .Button_ModalProject {
-    width: 100%;
+    width: 90vw;
     height: 20vh;
-    margin: 0;
+    margin: auto;
   }
   .Button_ModalProject h3 {
     font-size: 0.8rem;
@@ -424,14 +424,14 @@ button:active {
   background-color: rgba(255, 255, 255, 0.35);
   z-index: 98;
 }
-.Modal_Content {
+.Modal_ContentContainer {
   position: static;
   inset: 40px;
   border: 0px solid #ccc;
   background-color: #2e2e2e;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  border-radius: 4px;
+  border-radius: 40px;
   outline: none;
   height: -moz-fit-content;
   height: fit-content;
@@ -441,8 +441,9 @@ button:active {
   z-index: 99;
 }
 @media screen and (max-width: 767.98px) {
-  .Modal_Content {
+  .Modal_ContentContainer {
     width: 90%;
+    border-radius: 10px;
   }
 }
 .Modal_Header {
@@ -451,52 +452,82 @@ button:active {
   align-items: flex-start;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 767.98px) {
+  .Modal_Header {
+    margin-bottom: 0.7rem;
+  }
+}
 .Modal_Header_TitleContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  font-size: 0.7rem;
+  flex-grow: 1;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .Modal_Header_TitleContainer {
+    font-size: 0.7rem;
+  }
 }
 .Modal_Header_TitleContainer h3 {
   margin: 0;
   padding: 0;
 }
 .Modal_Header_LinksContainer {
-  gap: 15px;
+  display: flex;
+  gap: 30px;
 }
-.Modal_Header_LinksContainer_WebLogo {
-  font-size: 2rem;
+@media screen and (max-width: 767.98px) {
+  .Modal_Header_LinksContainer {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.Modal_Header_LinksContainer_External {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (max-width: 767.98px) {
+  .Modal_Header_LinksContainer_External {
+    gap: 15px;
+  }
+}
+.Modal_Header_LinksContainer_External_WebLogo {
   color: white;
 }
-.Modal_Header_LinksContainer_WebLogo:hover {
+.Modal_Header_LinksContainer_External_WebLogo:hover {
   color: violet;
 }
-.Modal_Header_LinksContainer_GithubLogo {
-  width: 2rem;
-}
-.Modal_Header_LinksContainer button {
+.Modal_Header_LinksContainer_ExitModal {
   height: -moz-fit-content;
   height: fit-content;
   cursor: pointer;
   background: none;
   border: none;
+  padding: 0;
 }
-.Modal_Header_LinksContainer button:hover {
+.Modal_Header_LinksContainer_ExitModal:hover {
   animation: rotate-down 0.4s ease-in-out forwards;
 }
-.Modal_Header_LinksContainer button i {
-  font-size: 2rem;
+.Modal_Header_LinksContainer_External_WebLogo, .Modal_Header_LinksContainer_ExitModal i {
+  font-size: 3rem;
 }
-.Modal_Header div {
-  display: flex;
-  align-items: flex-start;
+@media screen and (max-width: 767.98px) {
+  .Modal_Header_LinksContainer_External_WebLogo, .Modal_Header_LinksContainer_ExitModal i {
+    font-size: 1.5rem;
+  }
 }
-.Modal_Project {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.Modal_Header_LinksContainer_External_GithubLogo {
+  width: 3rem;
+}
+@media screen and (max-width: 767.98px) {
+  .Modal_Header_LinksContainer_External_GithubLogo {
+    width: 1.5rem;
+  }
 }
 .Modal_Project_ImgContainer {
   display: flex;
@@ -511,19 +542,40 @@ button:active {
   max-height: 40vh;
   border-radius: 10px;
 }
-.Modal_Logos_Container {
+.Modal_Project_Info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Modal_Project_Info h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767.98px) {
+  .Modal_Project_Info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.Modal_Project_Info_Logos_Container {
   display: flex;
   flex-direction: row;
   gap: 10px;
   width: -moz-fit-content;
   width: fit-content;
 }
-.Modal_logo {
-  height: 50px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px black solid;
+.Modal_Project_Info_Description, .Modal_Project_Info_Logos {
+  background-color: rgba(5, 4, 4, 0.6901960784);
+  padding: 10px;
   border-radius: 10px;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #FFF, #FFF) border-box;
+  background-size: 200% 100%;
+  animation: HomeGradient 5s ease infinite;
+  border: 2px solid transparent;
+}
+@media screen and (max-width: 767.98px) {
+  .Modal_Project_Info_Description, .Modal_Project_Info_Logos {
+    font-size: 0.7rem;
+  }
 }
 
 :root {

@@ -12,11 +12,10 @@
     padding: 1px
     cursor: pointer
     @media screen and ( max-width: $layout-breakpoint-small )
-        // width: 350px
-        width: 100%
-        // height: 250px
+
+        width: 90vw
         height: 20vh
-        margin: 0
+        margin: auto
 
         h3
             font-size: 0.8rem
@@ -95,14 +94,14 @@
         inset: 0px
         background-color: rgba(255, 255, 255, 0.35)
         z-index: 98
-    &_Content
+    &_ContentContainer
         position: static
         inset: 40px
         border: 0px solid #ccc
         background-color: #2e2e2e
         overflow: auto
         -webkit-overflow-scrolling: touch
-        border-radius: 4px
+        border-radius: 40px
         outline: none
         height: fit-content
         max-height: 80vh
@@ -111,47 +110,65 @@
         z-index: 99
         @media screen and ( max-width: $layout-breakpoint-small )
             width: 90%
+            border-radius: 10px
     &_Header
         display: flex
         justify-content: space-between
         align-items: flex-start
         margin-bottom: 2rem
+        @media screen and ( max-width: $layout-breakpoint-small )
+            margin-bottom: .7rem
         &_TitleContainer
             display: flex
             flex-direction: column
             align-items: flex-start
             justify-content: center
-            font-size: 0.7rem
+            flex-grow: 1
+            font-size: 1.2rem
+            @media screen and ( max-width: $layout-breakpoint-small )
+                font-size: 0.7rem
             h3
                 margin: 0
                 padding: 0
         &_LinksContainer
-            gap: 15px
-            &_WebLogo
-                font-size: 2rem
-                color: white
-                &:hover
-                    color: violet
-            &_GithubLogo
-                width: 2rem
-            button
+            display: flex
+            gap: 30px
+            @media screen and ( max-width: $layout-breakpoint-small )
+                flex-direction: column-reverse
+                align-items: flex-end
+                justify-content: center
+                gap: 10px
+            &_External
+                display: flex
+                justify-content: center
+                gap: 30px
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    gap: 15px
+                &_WebLogo
+                    color: white
+                    &:hover
+                        color: violet
+            &_ExitModal
                 height: fit-content
                 cursor: pointer
                 background: none
                 border: none
+                padding: 0
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    // margin: auto
                 &:hover
                     animation: rotate-down 0.4s ease-in-out forwards
-                i
-                    font-size: 2rem
 
-        div
-            display: flex
-            align-items: flex-start
+            &_External_WebLogo, , &_ExitModal i
+                font-size: 3rem
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    font-size: 1.5rem
+            &_External_GithubLogo
+                width: 3rem
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    width: 1.5rem
+
     &_Project
-        display: flex
-        flex-direction: row
-        flex-wrap: wrap
-        justify-content: space-evenly
         &_ImgContainer
             display: flex
             width: 100%
@@ -162,17 +179,28 @@
                 max-width: 100%
                 max-height: 40vh
                 border-radius: 10px
-
-    &_Logos
-
-        &_Container
+        &_Info
             display: flex
-            flex-direction: row
-            gap: 10px
-            width: fit-content
-    &_logo
-        height: 50px
-        padding: 5px
-        background-color: rgba(255,255,255,0.3)
-        border: 1px black solid
-        border-radius: 10px
+            justify-content: space-evenly
+            h4
+                margin: 0
+                margin-bottom: 10px
+            @media screen and ( max-width: $layout-breakpoint-small )
+                flex-direction: column
+                gap: 10px
+            &_Logos
+                &_Container
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    width: fit-content
+            &_Description, &_Logos
+                background-color: #050404b0
+                padding: 10px
+                border-radius: 10px
+                background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#FFF, #FFF) border-box
+                background-size: 200% 100%
+                animation: HomeGradient 5s ease infinite
+                border: 2px solid transparent
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    font-size: 0.7rem

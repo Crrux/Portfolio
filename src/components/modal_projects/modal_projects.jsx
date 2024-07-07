@@ -40,7 +40,7 @@ function ModalCmpnt({ project, dataLogos }) {
         onRequestClose={closeModal}
         portalClassName={"Modal_portal"}
         overlayClassName={"Modal_overlay"}
-        className={"Modal_Content"}
+        className={"Modal_ContentContainer"}
       >
         <header className="Modal_Header">
           <div className="Modal_Header_TitleContainer">
@@ -49,31 +49,34 @@ function ModalCmpnt({ project, dataLogos }) {
           </div>
 
           <div className="Modal_Header_LinksContainer">
-            {project.WebLink ? (
+            <div className="Modal_Header_LinksContainer_External">
+              {project.WebLink ? (
+                <a
+                  href={project.WebLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-solid fa-globe Modal_Header_LinksContainer_External_WebLogo"></i>
+                </a>
+              ) : (
+                ""
+              )}
               <a
-                href={project.WebLink}
+                href={project.GithubLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-solid fa-globe Modal_Header_LinksContainer_WebLogo"></i>
+                <img
+                  src={dataLogos.find((logo) => logo.title === "Github").URL}
+                  className="Modal_Header_LinksContainer_External_GithubLogo"
+                  alt="Github Logo"
+                />
               </a>
-            ) : (
-              ""
-            )}
-            <a
-              href={project.GithubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={dataLogos.find((logo) => logo.title === "Github").URL}
-                className="Modal_Header_LinksContainer_GithubLogo"
-                alt="Github Logo"
-              />
-            </a>
+            </div>
+
             <button
               onClick={closeModal}
-              className="button_exit_modal"
+              className="Modal_Header_LinksContainer_ExitModal"
               role="button"
               aria-label="Exit Modal"
             >
@@ -85,15 +88,17 @@ function ModalCmpnt({ project, dataLogos }) {
           <div className="Modal_Project_ImgContainer">
             <img src={project.imageURL} alt="Project screenshot"></img>
           </div>
-          <div className="Modal_Project_Description">
-            <h4>Description :</h4>
-            <p>{project.description}</p>
-          </div>
+          <div className="Modal_Project_Info">
+            <div className="Modal_Project_Info_Description">
+              <h4>Description :</h4>
+              <p>{project.description}</p>
+            </div>
 
-          <div className="Modal_Logos">
-            <h4>Language / framework used :</h4>
-            <div className="Modal_Logos_Container">
-              <Logosvg logos={project.used} />
+            <div className="Modal_Project_Info_Logos">
+              <h4>Language / framework used :</h4>
+              <div className="Modal_Project_Info_Logos_Container">
+                <Logosvg logos={project.used} />
+              </div>
             </div>
           </div>
         </section>
