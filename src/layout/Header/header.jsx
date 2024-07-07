@@ -1,15 +1,9 @@
 import githubIcon from "/assets/svg/github-icon.svg";
-import PropTypes from "prop-types";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 
-function Header({ user, setUser }) {
+import { Link, useLocation } from "react-router-dom";
+
+function Header() {
   const location = useLocation();
-  const navigate = useNavigate();
-  const disconnect = () => {
-    localStorage.clear();
-    setUser(null);
-    navigate("/");
-  };
 
   return (
     <header className="Header">
@@ -28,27 +22,6 @@ function Header({ user, setUser }) {
         >
           Contact
         </Link>
-        <Link
-          to={"/test"}
-          className={location.pathname === "/test" ? "activeLink" : ""}
-        >
-          Test
-        </Link>
-        <>
-          {!user ? (
-            // <Link to={"/login"}>Login</Link>
-            ""
-          ) : (
-            <span
-              tabIndex={0}
-              role="button"
-              onKeyUp={disconnect}
-              onClick={disconnect}
-            >
-              Logout
-            </span>
-          )}
-        </>
         <a
           href="https://github.com/Crrux"
           target="_blank"
@@ -65,13 +38,5 @@ function Header({ user, setUser }) {
     </header>
   );
 }
-
-Header.propTypes = {
-  user: PropTypes.shape({
-    userId: PropTypes.string,
-    token: PropTypes.string,
-  }),
-  setUser: PropTypes.func.isRequired,
-};
 
 export default Header;
