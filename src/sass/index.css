@@ -102,46 +102,58 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 1150px) {
+  .Home_Language {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .Home_Language_pcontainer {
-  display: inline-flex;
+  display: flex;
   width: 40%;
-  height: 60px;
-  margin: 10px;
+  flex-grow: 1;
+  margin: auto;
 }
 @media screen and (max-width: 1150px) {
   .Home_Language_pcontainer {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    height: -moz-fit-content;
-    height: fit-content;
     background: none;
+    flex-grow: 0;
+    margin-left: 10px;
   }
 }
-.Home_Language_pcontainer_1, .Home_Language_pcontainer_2 {
+@media screen and (min-width: 1150px) and (max-width: 1315px) {
+  .Home_Language_pcontainer {
+    flex-direction: column;
+    flex-grow: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Home_Language_pcontainer {
+    flex-direction: column;
+  }
+}
+.Home_Language_pcontainer_1 {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.Home_Language_pcontainer_2 {
   display: inline-flex;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
-}
-.Home_Language_pcontainer_1 {
-  font-weight: bold;
-}
-.Home_Language_pcontainer_2 {
   margin: 0;
   padding: 5px;
   gap: 20px;
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-}
-@media screen and (max-width: 1150px) {
-  .Home_Language_pcontainer_2 {
-    background: rgb(33, 33, 33);
-    background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(130, 130, 130) 50%, rgb(33, 33, 33) 100%);
-  }
 }
 @media screen and (max-width: 767.98px) {
   .Home_Language_pcontainer_2 {
@@ -347,8 +359,11 @@ button:active {
   overflow: hidden;
 }
 .Button_ModalProject_Background img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   min-height: 300px;
+  height: 100%;
 }
 @media screen and (max-width: 767.98px) {
   .Button_ModalProject_Background img {
