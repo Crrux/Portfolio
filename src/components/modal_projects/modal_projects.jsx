@@ -86,7 +86,11 @@ function ModalCmpnt({ project, dataLogos }) {
         </header>
         <section className="Modal_Project">
           <div className="Modal_Project_ImgContainer">
-            <img src={project.imageURL} alt="Project screenshot"></img>
+            <img
+              src={project.imageURL}
+              alt="Project screenshot"
+              title={project.name}
+            ></img>
           </div>
           <div className="Modal_Project_Info">
             <div className="Modal_Project_Info_Description">
