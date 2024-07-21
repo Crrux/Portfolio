@@ -402,6 +402,10 @@ button:active {
 .Button_ModalProject_Hover:hover {
   opacity: 100;
 }
+.Button_ModalProject:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
 
 @keyframes rotate-down {
   from {
