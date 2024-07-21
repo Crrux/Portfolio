@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import Modal from "../modal_projects/modal_projects";
+import Loading from "../loading/loading";
 
 function ProjectCard() {
   const [dataProjects, setData] = useState([]);
@@ -25,7 +26,9 @@ function ProjectCard() {
       <div className="Projects_Cards">
         {dataProjects &&
           dataProjects.map((project, index) => (
-            <Modal key={index} project={project} dataLogos={dataLogos}></Modal>
+            <Suspense fallback={<Loading />} key={index}>
+              <Modal project={project} dataLogos={dataLogos}></Modal>
+            </Suspense>
           ))}
       </div>
     </section>

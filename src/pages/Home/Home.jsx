@@ -1,6 +1,8 @@
 import photo from "/assets/photo.webp";
 import Logosvg from "../../components/logosvg/logosvg";
 import ProjectCard from "../../components/project_card/project_card";
+import { Suspense } from "react";
+import Loading from "../../components/loading/loading";
 
 function Home() {
   return (
@@ -8,12 +10,15 @@ function Home() {
       <div className="Home_Presentation_Container">
         <section className="Home_Container">
           <div className="Home_Presentation">
-            <img
-              src={photo}
-              alt="Mountain landscape with Arthur and a dog"
-              className="Home_Presentation_Photo"
-            />
-            <div>
+            <Suspense fallback={<Loading />}>
+              <img
+                src={photo}
+                alt="Mountain landscape with Arthur and a dog"
+                className="Home_Presentation_Photo"
+              />
+            </Suspense>
+
+            <div className="Home_Presentation_Text">
               <h1>Welcome.</h1>
               <p>
                 My name is Mursch Arthur and i&apos;m a fullstack web developper
@@ -58,7 +63,6 @@ function Home() {
           </div>
         </section>
       </div>
-
       <ProjectCard />
     </main>
   );
