@@ -109,7 +109,7 @@
       "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/kasa.webp",
       "GithubLink": "https://github.com/Crrux/kasa",
-      "WebLink": "https://kasa-indol-rho.vercel.app/",
+      "WebLink": "https://kasa.amursch.swf.ovh/",
       "description": "Front-end developped with React",
       "used": ["React", "SASS"]
     }
