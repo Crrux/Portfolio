@@ -405,11 +405,23 @@ button:active {
 .Button_ModalProject_Hover:hover {
   opacity: 100;
 }
-.Button_ModalProject:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
+@media screen and (min-width: 1150px) {
+  .Button_ModalProject:hover {
+    animation: test 3s infinite;
+  }
 }
 
+@keyframes test {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 @keyframes rotate-down {
   from {
     transform: rotate(360deg);

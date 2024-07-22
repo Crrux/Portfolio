@@ -69,9 +69,15 @@
         &:hover
             opacity: 100
     &:hover
+        @media screen and ( min-width: $layout-breakpoint-tablet-max )
+            animation: test 3s infinite
+@keyframes test
+    0%
         transform: scale(1.1)
-        transition: 0.4s
-
+    50%
+        transform: scale(1.12)
+    100%
+        transform: scale(1.1)
 @keyframes rotate-down
     from
         transform: rotate(360deg)
