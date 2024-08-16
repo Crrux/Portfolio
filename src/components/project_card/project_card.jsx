@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 
 import Modal from "../modal_projects/modal_projects";
 import Loading from "../loading/loading";
-
+ 
 function ProjectCard() {
   const [dataProjects, setData] = useState([]);
   const [dataLogos, setLogos] = useState([]);
