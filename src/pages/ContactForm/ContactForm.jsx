@@ -25,6 +25,8 @@ function Form() {
               type="email"
               name="email"
               autoComplete="email"
+              placeholder="Ex.: test@gmail.com"
+              autoFocus
               required
             />
             <ValidationError
