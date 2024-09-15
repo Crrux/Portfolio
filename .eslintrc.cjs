@@ -7,6 +7,9 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
   ],
+  linterOptions: {
+    extensions: ['.js', '.jsx'],
+  },
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
@@ -19,5 +22,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-console': 'error',
   },
 }
