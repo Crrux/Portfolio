@@ -1,10 +1,26 @@
 import photo from '/assets/photo.webp'
 import Logosvg from '../../components/logosvg/logosvg'
-import ProjectCard from '../../components/project_card/project_card'
-import { Suspense } from 'react'
+import { Suspense, useState, useEffect } from 'react'
 import Loading from '../../components/loading/loading'
+import Modal from "../../components/modal_projects/modal_projects";
 
 function Home() {
+  const [dataProjects, setData] = useState([]);
+  const [dataLogos, setLogos] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/assets/database.json");
+        const ProjectsData = await response.json();
+        setData(ProjectsData.projects);
+        setLogos(ProjectsData.logos);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <main className='Home'>
       <div className='Home_Presentation_Container'>
@@ -67,7 +83,15 @@ function Home() {
           </div>
         </section>
       </div>
-      <ProjectCard />
+      <section className="Projects" id="Projects">
+        <h2>My projects</h2>
+        <div className="Projects_Cards">
+          {dataProjects &&
+            dataProjects.map((project, index) => (
+              <Modal project={project} dataLogos={dataLogos} key={index}></Modal>
+            ))}
+        </div>
+      </section>
     </main>
   )
 }

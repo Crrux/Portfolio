@@ -162,6 +162,26 @@
     width: 100%;
   }
 }
+.Home .Projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Home .Projects_Cards {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin-top: 20px;
+  gap: 15px;
+}
+@media screen and (max-width: 767.98px) {
+  .Home .Projects_Cards {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 30px;
+  }
+}
+
 @keyframes HomeGradient {
   0% {
     background-position: 0% 50%;
@@ -303,132 +323,68 @@ button:active {
   }
 }
 
-.Projects {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.Projects_Cards {
-  display: grid;
-  align-items: flex-start;
-  justify-items: flex-start;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  margin-top: 20px;
-  gap: 15px;
-}
-@media screen and (max-width: 767.98px) {
-  .Projects_Cards {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    gap: 30px;
-  }
-}
-
 .Button_ModalProject {
+  all: unset;
+  cursor: pointer;
   position: relative;
-  display: flex;
-  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #FFF, #FFF) border-box;
-  background-size: 200% 100%;
-  border-radius: 15px;
   width: 500px;
   height: 300px;
-  margin: auto auto 30px auto;
-  animation: HomeGradient 5s ease infinite;
-  border: 2px solid transparent;
-  padding: 1px;
-  cursor: pointer;
+  overflow: hidden;
+  border-radius: 15px;
 }
 @media screen and (max-width: 767.98px) {
   .Button_ModalProject {
-    width: 90vw;
-    height: 20vh;
-    margin: auto;
-  }
-  .Button_ModalProject h3 {
-    font-size: 0.8rem;
+    height: 250px;
+    width: 420px;
   }
 }
-.Button_ModalProject_Background, .Button_ModalProject_Title {
+.Button_ModalProject:hover .Button_ModalProject_Hover {
+  opacity: 100;
+}
+.Button_ModalProject div, .Button_ModalProject img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 }
-.Button_ModalProject_Background {
-  border-radius: 14px;
-  margin: 0;
-  padding: 0.3px;
-  overflow: hidden;
-}
-.Button_ModalProject_Background img {
+.Button_ModalProject img {
+  z-index: 1;
+  min-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  min-height: 300px;
-  height: 100%;
 }
 @media screen and (max-width: 767.98px) {
-  .Button_ModalProject_Background img {
+  .Button_ModalProject img {
     min-height: 250px;
   }
 }
+.Button_ModalProject > div {
+  height: 100%;
+}
 .Button_ModalProject_Title {
-  border-radius: 15px;
-  z-index: 2;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.6) 99.99%, rgba(0, 0, 0, 0.9) 100%);
+  z-index: 13;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.6) 99.99%, rgba(0, 0, 0, 0.9) 100%);
 }
-.Button_ModalProject_Title div p {
-  margin: 0;
+.Button_ModalProject_Title p {
+  margin: 0 0 0.5rem 0;
   padding: 0;
 }
 .Button_ModalProject_Hover {
-  position: absolute;
-  top: 0;
-  left: 0;
+  transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.623);
   height: 100%;
   width: 100%;
-  border-radius: 14px;
-  z-index: 3;
-  margin: 0;
-  padding: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.623);
   opacity: 0;
 }
-.Button_ModalProject_Hover:hover {
-  opacity: 100;
-}
-@media screen and (min-width: 1150px) {
-  .Button_ModalProject:hover {
-    animation: test 3s infinite;
-  }
-}
 
-@keyframes test {
-  0% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1.12);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-@keyframes rotate-down {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 500ms ease-in-out;
@@ -604,6 +560,14 @@ button:active {
   }
 }
 
+@keyframes rotate-down {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
 .loader {
   position: relative;
   display: flex;
