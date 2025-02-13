@@ -16,19 +16,19 @@
     "prop-types": "^15.8.1",
     "proptypes": "^1.1.0",
     "react": "^18.3.1",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-modal": "^3.16.1",
-    "react-router": "^6.23.1",
-    "react-router-dom": "^6.23.1"
+    "react-router": "^6.29.0",
+    "react-router-dom": "^6.29.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint": "^9.20.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-refresh": "^0.4.19",
     "vite": "^5.4.14"
   }
 }

@@ -7,7 +7,9 @@ import Error from "./pages/Error/Error";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter future={{
+        v7_startTransition: true,
+      }}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
