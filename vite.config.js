@@ -14,19 +14,12 @@ export default defineConfig({
       ]
     })
   ],
+  resolve: {
+    alias: {
+      '@': '/src', // Example alias for easier imports
+    },
+  },
   server: {
-    host: '0.0.0.0',
-    port: 5174,
-    strictPort: true
+    port: 3000
   },
-  preview: {
-    host: '0.0.0.0',
-    port: 5174,
-    strictPort: true,
-    allowedHosts: ['crossfitobernai.com', 'www.crossfitobernai.com']
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets'
-  }
 });
