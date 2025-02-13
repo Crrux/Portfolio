@@ -47,7 +47,7 @@ function Home() {
             <div className='Home_Language_pcontainer'>
               <p className='Home_Language_pcontainer_1'>Frameworks :</p>
               <p className='Home_Language_pcontainer_2'>
-                <Logosvg logos={['ExpressJS', 'React']} />
+                <Logosvg logos={['ExpressJS', 'React', 'NestJS']} />
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
@@ -61,7 +61,7 @@ function Home() {
             <div className='Home_Language_pcontainer'>
               <p className='Home_Language_pcontainer_1'>Interested in:</p>
               <p className='Home_Language_pcontainer_2'>
-                <Logosvg logos={['NestJS', 'NextJS']} />
+                <Logosvg logos={['NextJS']} />
               </p>
             </div>
           </div>

@@ -61,17 +61,20 @@ function ModalCmpnt({ project, dataLogos }) {
               ) : (
                 ""
               )}
-              <a
-                href={project.GithubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={dataLogos.find((logo) => logo.title === "Github").URL}
-                  className="Modal_Header_LinksContainer_External_GithubLogo"
-                  alt="Github Logo"
-                />
-              </a>
+              {
+                project.GithubLink ? <a
+                  href={project.GithubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={dataLogos.find((logo) => logo.title === "Github").URL}
+                    className="Modal_Header_LinksContainer_External_GithubLogo"
+                    alt="Github Logo"
+                  />
+                </a> : ''
+              }
+
             </div>
 
             <button
