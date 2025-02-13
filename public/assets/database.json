@@ -73,28 +73,21 @@
   ],
   "projects": [
     {
-      "name": "Front-end for booki",
-      "origin": "(OpenClassroom project)",
-      "imageURL": "/assets/projects_screenshots/booki.webp",
-      "GithubLink": "https://github.com/Crrux/booki-starter-code",
-      "description": "HTML / CSS discovery",
-      "used": ["HTML", "CSS"]
+      "name": "Website for CrossfitObernai",
+      "origin": "(Personal project)",
+      "imageURL": "/assets/projects_screenshots/cfo.webp",
+      "WebLink": "https://crossfitobernai.com/",
+      "description": "Website for a Crossfit gym",
+      "used": ["HTML", "CSS", "Javascript", "SASS", "React", "NestJS"]
     },
     {
-      "name": "Front-end for Sophie Bluel",
+      "name": "Front-end for Kasa",
       "origin": "(OpenClassroom project)",
-      "imageURL": "/assets/projects_screenshots/bluel.webp",
-      "GithubLink": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel",
-      "description": "Javascript discovery",
-      "used": ["HTML", "CSS", "Javascript"]
-    },
-    {
-      "name": "Debug + optimization for Nina Carducci",
-      "origin": "(OpenClassroom project)",
-      "imageURL": "/assets/projects_screenshots/carducci.webp",
-      "GithubLink": "https://github.com/Crrux/nina-carducci.github.io",
-      "description": "Debugging and optimization using Lighthouse and WAVE",
-      "used": ["HTML", "CSS", "Javascript"]
+      "imageURL": "/assets/projects_screenshots/kasa.webp",
+      "GithubLink": "https://github.com/Crrux/kasa",
+      "WebLink": "https://kasa-indol-rho.vercel.app/",
+      "description": "Front-end developped with React",
+      "used": ["React", "SASS"]
     },
     {
       "name": "Back-end for 'Mon Vieux Grimoire'",
@@ -105,13 +98,28 @@
       "used": ["Javascript", "ExpressJS", "MongoDB"]
     },
     {
-      "name": "Front-end for Kasa",
+      "name": "Debug + optimization for Nina Carducci",
       "origin": "(OpenClassroom project)",
-      "imageURL": "/assets/projects_screenshots/kasa.webp",
-      "GithubLink": "https://github.com/Crrux/kasa",
-      "WebLink": "https://kasa-indol-rho.vercel.app/",
-      "description": "Front-end developped with React",
-      "used": ["React", "SASS"]
+      "imageURL": "/assets/projects_screenshots/carducci.webp",
+      "GithubLink": "https://github.com/Crrux/nina-carducci.github.io",
+      "description": "Debugging and optimization using Lighthouse and WAVE",
+      "used": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Front-end for Sophie Bluel",
+      "origin": "(OpenClassroom project)",
+      "imageURL": "/assets/projects_screenshots/bluel.webp",
+      "GithubLink": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel",
+      "description": "Javascript discovery",
+      "used": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Front-end for booki",
+      "origin": "(OpenClassroom project)",
+      "imageURL": "/assets/projects_screenshots/booki.webp",
+      "GithubLink": "https://github.com/Crrux/booki-starter-code",
+      "description": "HTML / CSS discovery",
+      "used": ["HTML", "CSS"]
     }
   ]
 }

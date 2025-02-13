@@ -6,7 +6,7 @@ import Logosvg from "../logosvg/logosvg";
 
 Modal.setAppElement("#root");
 
-function ModalCmpnt({ project, dataLogos }) {
+function Project({ project, dataLogos }) {
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
@@ -16,25 +16,17 @@ function ModalCmpnt({ project, dataLogos }) {
   }
   return (
     <>
-      <button
-        className="Button_ModalProject"
-        onClick={openModal}
-        role="button"
-        aria-label="Open Modal for this project"
-      >
-        <div className="Button_ModalProject_Background">
-          <img src={project.imageURL} alt={`Image of ${project.name}`}></img>
-        </div>
+      <button onClick={openModal} role="button" aria-label="Open Modal for this project" className="Button_ModalProject">
+        <img src={project.imageURL} alt={`Image of ${project.name}`} />
         <div className="Button_ModalProject_Title">
           <p>{project.name}</p>
-          {project.origin ? <p>{project.origin}</p> : ""}
+          <p>{project.origin}</p>
         </div>
         <div className="Button_ModalProject_Hover">
-          <p>
-            <i className="fa-solid fa-up-right-from-square"></i>
-          </p>
+          <i className="fa-solid fa-up-right-from-square"></i>
         </div>
       </button>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -61,17 +53,20 @@ function ModalCmpnt({ project, dataLogos }) {
               ) : (
                 ""
               )}
-              <a
-                href={project.GithubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={dataLogos.find((logo) => logo.title === "Github").URL}
-                  className="Modal_Header_LinksContainer_External_GithubLogo"
-                  alt="Github Logo"
-                />
-              </a>
+              {
+                project.GithubLink ? <a
+                  href={project.GithubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={dataLogos.find((logo) => logo.title === "Github").URL}
+                    className="Modal_Header_LinksContainer_External_GithubLogo"
+                    alt="Github Logo"
+                  />
+                </a> : ''
+              }
+
             </div>
 
             <button
@@ -108,12 +103,12 @@ function ModalCmpnt({ project, dataLogos }) {
         </section>
       </Modal>
     </>
-  );
+  )
 }
 
-ModalCmpnt.propTypes = {
+Project.propTypes = {
   project: PropTypes.object.isRequired,
   dataLogos: PropTypes.array.isRequired,
 };
 
-export default ModalCmpnt;
+export default Project;

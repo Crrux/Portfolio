@@ -1,88 +1,51 @@
 .Button_ModalProject
+    all: unset
+    cursor: pointer
     position: relative
-    display: flex
-    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#FFF, #FFF) border-box
-    background-size: 200% 100%
-    border-radius: 15px
     width: 500px
     height: 300px
-    margin: auto auto 30px auto
-    animation: HomeGradient 5s ease infinite
-    border: 2px solid transparent
-    padding: 1px
-    cursor: pointer
+    overflow: hidden
+    border-radius: 15px
     @media screen and ( max-width: $layout-breakpoint-small )
+        height: 250px
+        width: 420px
 
-        width: 90vw
-        height: 20vh
-        margin: auto
-
-        h3
-            font-size: 0.8rem
-    &_Background , &_Title
+    &:hover
+        .Button_ModalProject_Hover
+            opacity: 100
+    div, img
         position: absolute
         top: 0
         left: 0
         width: 100%
+    img
+        z-index: 1
+        min-height: 300px
+        object-fit: cover
+        @media screen and ( max-width: $layout-breakpoint-small )
+            min-height: 250px
+    >div
         height: 100%
-
-    &_Background
-        border-radius: 14px
-        margin: 0
-        padding: 0.3px
-        overflow: hidden
-        // display: flex
-        img
-            object-fit: cover
-            width: 100%
-            min-height: 300px
-            height: 100%
-            @media screen and ( max-width: $layout-breakpoint-small )
-                min-height: 250px
     &_Title
-        border-radius: 15px
-        z-index: 2
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.60) 99.99%, rgba(0, 0, 0, 0.90) 100%)
+        z-index: 13
         display: flex
         flex-direction: column
         justify-content: flex-end
         align-items: center
-        div
-            p
-                margin: 0
-                padding: 0
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.60) 99.99%, rgba(0, 0, 0, 0.90) 100%)
+        p
+            margin: 0 0 0.5rem 0
+            padding: 0
     &_Hover
-        position: absolute
-        top: 0
-        left: 0
+        transition: all 0.3s
         display: flex
         align-items: center
         justify-content: center
-        background-color: rgba(0, 0, 0, 0.623)
         height: 100%
         width: 100%
-        border-radius: 14px
-        z-index: 3
-        margin: 0
-        padding: 0
+        z-index: 2
+        background-color: rgba(0, 0, 0, 0.623)
         opacity: 0
-        &:hover
-            opacity: 100
-    &:hover
-        @media screen and ( min-width: $layout-breakpoint-tablet-max )
-            animation: test 3s infinite
-@keyframes test
-    0%
-        transform: scale(1.1)
-    50%
-        transform: scale(1.12)
-    100%
-        transform: scale(1.1)
-@keyframes rotate-down
-    from
-        transform: rotate(360deg)
-    to
-        transform: rotate(180deg)
 
 .ReactModal__Overlay
     opacity: 0
@@ -95,8 +58,6 @@
         opacity: 0
 
 .Modal
-    // &_portal
-
     &_overlay
         position: fixed
         display: flex
@@ -216,3 +177,9 @@
                 border: 2px solid transparent
                 @media screen and ( max-width: $layout-breakpoint-small )
                     font-size: 0.7rem
+
+@keyframes rotate-down
+    from
+        transform: rotate(360deg)
+    to
+        transform: rotate(180deg)
