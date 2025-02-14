@@ -337,7 +337,7 @@ button:active {
 @media screen and (max-width: 767.98px) {
   .Button_ModalProject {
     height: 250px;
-    width: 420px;
+    width: 100%;
   }
 }
 .Button_ModalProject:hover .Button_ModalProject_Hover {
@@ -419,9 +419,9 @@ button:active {
   outline: none;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 80vh;
+  max-height: 90vh;
   padding: 20px;
-  width: 70%;
+  width: 80%;
   z-index: 99;
 }
 @media screen and (max-width: 767.98px) {
@@ -529,6 +529,7 @@ button:active {
 .Modal_Project_Info {
   display: flex;
   justify-content: space-evenly;
+  gap: 20px;
 }
 .Modal_Project_Info h4 {
   margin: 0;
