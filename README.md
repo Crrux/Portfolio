@@ -1,8 +1,18 @@
-# React + Vite
+# Portfolio Personnel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un portfolio moderne développé avec React et Vite, présentant mes projets et compétences en développement.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Présentation personnelle
+- Présentation des projets GitHub
+- Formulaire de contact intégré avec Formspree
+- Design responsive et moderne
+- Navigation fluide entre les sections
+
+## 🛠️ Technologies Utilisées
+
+- React
+- Vite
+- Formspree pour la gestion des formulaires
+- SASS Modules pour le styling
