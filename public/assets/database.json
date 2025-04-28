@@ -77,7 +77,7 @@
       "origin": "(Personal project)",
       "imageURL": "/assets/projects_screenshots/cfo.webp",
       "WebLink": "https://crossfitobernai.com/",
-      "description": "Website for a Crossfit gym",
+      "description": "I developed a dynamic website for a CrossFit box using React for the frontend and NestJS for the backend. The site features a contact form managed by the NestJS backend. The technologies used include HTML, JavaScript, Sass for styling, React for the user interface, and NestJS for handling backend requests. The site is hosted on a VPS server running Ubuntu, where I configured everything, including PM2 for process management and Nginx as the web server.",
       "used": ["HTML", "CSS", "Javascript", "SASS", "React", "NestJS"]
     },
     {

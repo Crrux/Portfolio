@@ -556,10 +556,12 @@ button:active {
   background-size: 200% 100%;
   animation: HomeGradient 5s ease infinite;
   border: 2px solid transparent;
+  max-width: 50%;
 }
 @media screen and (max-width: 767.98px) {
   .Modal_Project_Info_Description, .Modal_Project_Info_Logos {
     font-size: 0.7rem;
+    max-width: 100%;
   }
 }
 
