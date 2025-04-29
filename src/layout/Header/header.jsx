@@ -1,9 +1,11 @@
 import githubIcon from "/assets/svg/github-icon.svg";
+import { useTranslation } from 'react-i18next';
 
 import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <header className="Header">
@@ -13,14 +15,14 @@ function Header() {
           to={"/"}
           className={location.pathname === "/" ? "activeLink" : ""}
         >
-          Home
+          {t("header.home")}
         </Link>
-        {location.pathname === "/" ? <a href="#Projects">Projects</a> : ""}
+        {location.pathname === "/" ? <a href="#Projects">{t("header.projects")}</a> : ""}
         <Link
           to={"/contact"}
           className={location.pathname === "/contact" ? "activeLink" : ""}
         >
-          Contact
+          {t("header.contact")}
         </Link>
         <a
           href="https://github.com/Crrux"

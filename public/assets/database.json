@@ -99,55 +99,43 @@
   "projects": [
     {
       "name": "Website for CrossfitObernai",
-      "origin": "(Personal project)",
       "imageURL": "/assets/projects_screenshots/cfo.webp",
       "GithubLink": [
         "https://github.com/Crrux/CrossfitObernai",
         "https://github.com/Crrux/Backend-CFO"
       ],
       "WebLink": "https://crossfitobernai.com/",
-      "description": "I developed a dynamic website for a CrossFit box using React for the frontend and NestJS for the backend. The site features a contact form managed by the NestJS backend. The technologies used include HTML, JavaScript, Sass for styling, React for the user interface, and NestJS for handling backend requests. The site is hosted on a VPS server running Ubuntu, where I configured everything, including PM2 for process management and Nginx as the web server.",
       "used": ["HTML", "CSS", "Javascript", "SASS", "React", "NestJS"]
     },
     {
       "name": "Front-end for Kasa",
-      "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/kasa.webp",
       "GithubLink": "https://github.com/Crrux/kasa",
       "WebLink": "https://kasa-indol-rho.vercel.app/",
-      "description": "Front-end developped with React",
       "used": ["HTML", "CSS", "Javascript", "React", "SASS"]
     },
     {
       "name": "Back-end for 'Mon Vieux Grimoire'",
-      "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/grimoire.webp",
       "GithubLink": "https://github.com/Crrux/P7-BackEnd",
-      "description": "Implementation of an API and a database for “Mon Vieux Grimoire”.",
       "used": ["Javascript", "ExpressJS", "MongoDB"]
     },
     {
       "name": "Debug + optimization for Nina Carducci",
-      "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/carducci.webp",
       "GithubLink": "https://github.com/Crrux/nina-carducci.github.io",
-      "description": "Debugging and optimization using Lighthouse and WAVE",
       "used": ["HTML", "CSS", "Javascript"]
     },
     {
       "name": "Front-end for Sophie Bluel",
-      "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/bluel.webp",
       "GithubLink": "https://github.com/Crrux/Portfolio-architecte-sophie-bluel",
-      "description": "Javascript discovery",
       "used": ["HTML", "CSS", "Javascript"]
     },
     {
       "name": "Front-end for booki",
-      "origin": "(OpenClassroom project)",
       "imageURL": "/assets/projects_screenshots/booki.webp",
       "GithubLink": "https://github.com/Crrux/booki-starter-code",
-      "description": "HTML / CSS discovery",
       "used": ["HTML", "CSS"]
     }
   ]

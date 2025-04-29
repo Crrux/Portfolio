@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from 'react-i18next';
 
 import Modal from "react-modal";
 import Logosvg from "../logosvg/logosvg";
@@ -7,6 +8,7 @@ import Logosvg from "../logosvg/logosvg";
 Modal.setAppElement("#root");
 
 function Project({ project, dataLogos }) {
+  const { t } = useTranslation();
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -22,8 +24,8 @@ function Project({ project, dataLogos }) {
       <button onClick={openModal} role="button" aria-label="Open Modal for this project" className="Button_ModalProject">
         <img src={project.imageURL} alt={`Image of ${project.name}`} />
         <div className="Button_ModalProject_Title">
-          <p>{project.name}</p>
-          <p>{project.origin}</p>
+          <p>{t(`projects.${project.name}.title`)}</p>
+          <p>{t(`projects.${project.name}.origin`)}</p>
         </div>
         <div className="Button_ModalProject_Hover">
           <i className="fa-solid fa-up-right-from-square"></i>
@@ -39,8 +41,8 @@ function Project({ project, dataLogos }) {
       >
         <header className="Modal_Header">
           <div className="Modal_Header_TitleContainer">
-            <h3>{project.name}</h3>
-            {project.origin ? <p>{project.origin}</p> : ""}
+            <h3>{t(`projects.${project.name}.title`)}</h3>
+            <p>{t(`projects.${project.name}.origin`)}</p>
           </div>
 
           <div className="Modal_Header_LinksContainer">
@@ -116,11 +118,11 @@ function Project({ project, dataLogos }) {
           <div className="Modal_Project_Info">
             <div className="Modal_Project_Info_Description">
               <h4>Description :</h4>
-              <p>{project.description}</p>
+              <p>{t(`projects.${project.name}.description`)}</p>
             </div>
 
             <div className="Modal_Project_Info_Logos">
-              <h4>Language / framework used :</h4>
+              <h4>{t("projects.languages")}</h4>
               <div className="Modal_Project_Info_Logos_Container">
                 <Logosvg logos={project.used} />
               </div>

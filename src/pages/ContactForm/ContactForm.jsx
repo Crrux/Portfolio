@@ -1,7 +1,11 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
 
+import { useTranslation } from 'react-i18next';
+
+
 function Form() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [state, handleSubmit] = useForm("mleqyapn");
   if (state.succeeded) {
@@ -10,7 +14,7 @@ function Form() {
     }, 2000);
     return (
       <main className="ContactForm_submitted">
-        <p>Message sent, thanks !</p>
+        <p>{t('contact.success')}</p>
       </main>
     );
   }
@@ -19,7 +23,7 @@ function Form() {
       <div className="Form_container">
         <form onSubmit={handleSubmit} className="ContactForm">
           <div className="form-group">
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email">{t("contact.email")}</label>
             <input
               id="email"
               type="email"
@@ -36,7 +40,7 @@ function Form() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{t("contact.message")}</label>
 
             <textarea
               id="message"
@@ -57,7 +61,7 @@ function Form() {
             className="form-submit-btn"
             disabled={state.submitting}
           >
-            Submit
+            {t("contact.submit")}
           </button>
         </form>
       </div>

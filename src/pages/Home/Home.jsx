@@ -4,9 +4,13 @@ import { Suspense, useState, useEffect } from 'react'
 import Loading from '../../components/loading/loading'
 import Modal from "../../components/modal_projects/modal_projects";
 
+import { useTranslation } from 'react-i18next';
+
+
 function Home() {
   const [dataProjects, setData] = useState([]);
   const [dataLogos, setLogos] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,25 +39,21 @@ function Home() {
             </Suspense>
 
             <div className='Home_Presentation_Text'>
-              <h1>Welcome.</h1>
+              <h1>{t('welcome')}</h1>
               <p>
-                My name is Mursch Arthur and i&apos;m a fullstack web developper
-                based in France.
+                {t('presentation.intro')}
               </p>
               <p>
-                Junior web developer eager to learn and do projects that can
-                give me the opportunity to take on new challenges and learn.
+                {t('presentation.experience')}
               </p>
               <p>
-                📩 Are you looking for a passionate and versatile developer for
-                your next project? Don&apos;t hesitate to contact me to discuss
-                your requirements.
+                {t('presentation.contact')}.
               </p>
             </div>
           </div>
           <div className='Home_Language'>
             <div className='Home_Language_pcontainer'>
-              <p className='Home_Language_pcontainer_1'>Language :</p>
+              <p className='Home_Language_pcontainer_1'>{t('sections.language')}</p>
               <p className='Home_Language_pcontainer_2'>
                 <Logosvg
                   logos={['HTML', 'CSS', 'Javascript', 'SASS', 'TypeScript', 'Python']}
@@ -61,13 +61,13 @@ function Home() {
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
-              <p className='Home_Language_pcontainer_1'>Frameworks :</p>
+              <p className='Home_Language_pcontainer_1'>{t('sections.frameworks')}</p>
               <p className='Home_Language_pcontainer_2'>
                 <Logosvg logos={['ExpressJS', 'React', 'NestJS', 'Django']} />
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
-              <p className='Home_Language_pcontainer_1'>Side:</p>
+              <p className='Home_Language_pcontainer_1'>{t('sections.tools')}</p>
               <p className='Home_Language_pcontainer_2'>
                 <Logosvg
                   logos={['Git', 'Github', 'mySQL', 'MongoDB', 'NodeJS', 'PostgreSQL']}
@@ -75,7 +75,7 @@ function Home() {
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
-              <p className='Home_Language_pcontainer_1'>Interested in:</p>
+              <p className='Home_Language_pcontainer_1'>{t('sections.interests')}</p>
               <p className='Home_Language_pcontainer_2'>
                 <Logosvg logos={['NextJS', "Flask", "TensorFlow"]} />
               </p>
@@ -84,7 +84,7 @@ function Home() {
         </section>
       </div>
       <section className="Projects" id="Projects">
-        <h2>My projects</h2>
+        <h2>{t('projects.title')}</h2>
         <div className="Projects_Cards">
           {dataProjects &&
             dataProjects.map((project, index) => (

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import 'primereact/resources/themes/lara-dark-teal/theme.css'
 
 import './sass/index.css'
+import './i18n';
 
 import App from './App'
 

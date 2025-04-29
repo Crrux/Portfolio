@@ -1,0 +1,65 @@
+{
+  "welcome": "Bienvenue.",
+  "presentation": {
+    "intro": "Je m'appelle Mursch Arthur et je suis un développeur web fullstack basé en France.",
+    "experience": "Développeur web junior désireux d'apprendre et de réaliser des projets qui me permettent de relever de nouveaux défis et d'apprendre.",
+    "contact": "📩 Vous recherchez un développeur passionné et polyvalent pour votre prochain projet ? N'hésitez pas à me contacter pour discuter de vos besoins."
+  },
+  "sections": {
+    "language": "Langages :",
+    "frameworks": "Frameworks :",
+    "tools": "Outils :",
+    "interests": "Je m'intéresse à :"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "languages": "Languages / Frameworks utilisées :",
+    "Website for CrossfitObernai": {
+      "title": "Site web pour CrossfitObernai",
+      "alt": "Logo de Crossfit Obernai",
+      "origin": "(Projet personnel)",
+      "description": "J'ai développé un site web dynamique pour une salle de CrossFit en utilisant React pour le frontend et NestJS pour le backend. Le site comporte un formulaire de contact géré par le backend NestJS. Les technologies utilisées sont HTML, JavaScript, Sass pour le style, React pour l'interface utilisateur, et NestJS pour gérer les requêtes du backend. Le site est hébergé sur un serveur VPS fonctionnant sous Ubuntu, où j'ai tout configuré, y compris PM2 pour la gestion des processus et Nginx en tant que serveur web."
+    },
+    "Front-end for Kasa": {
+      "title": "Front-end pour Kasa",
+      "alt": "Image du Front-end pour Kasa",
+      "origin": "(Projet OpenClassroom)",
+      "description": "Front-end développé avec React."
+    },
+    "Back-end for 'Mon Vieux Grimoire'": {
+      "title": "Back-end pour 'Mon Vieux Grimoire'",
+      "alt": "Image de 'Mon Vieux Grimoire'",
+      "origin": "(Projet OpenClassroom)",
+      "description": "Implémentation d'une API pour 'Mon Vieux Grimoire'."
+    },
+    "Debug + optimization for Nina Carducci": {
+      "title": "Debug + optimisation pour le site de Nina Carducci",
+      "alt": "Image du site de Nina Carducci",
+      "origin": "(Projet OpenClassroom)",
+      "description": "Débogage et optimisation à l'aide de Lighthouse et WAVE."
+    },
+    "Front-end for Sophie Bluel": {
+      "title": "Front-end pour Sophie Bluel",
+      "alt": "Image du site de Sophie Bluel",
+      "origin": "(Projet OpenClassroom)",
+      "description": "Decouverte Javascript."
+    },
+    "Front-end for booki": {
+      "title": "Front-end de booki",
+      "alt": "Image du Front-end de booki",
+      "origin": "(Projet OpenClassroom)",
+      "description": "Decouverte de HTML / CSS."
+    }
+  },
+  "contact": {
+    "email": "Adresse Email",
+    "message": "Message",
+    "submit": "Envoyer",
+    "success": "Message envoyé, merci !"
+  },
+  "header": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "contact": "Contact"
+  }
+}

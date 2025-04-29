@@ -1,0 +1,65 @@
+{
+  "welcome": "Welcome.",
+  "presentation": {
+    "intro": "My name is Mursch Arthur and I'm a fullstack web developer based in France.",
+    "experience": "Junior web developer eager to learn and do projects that can give me the opportunity to take on new challenges and learn.",
+    "contact": "📩 Are you looking for a passionate and versatile developer for your next project? Don't hesitate to contact me to discuss your requirements."
+  },
+  "sections": {
+    "language": "Language :",
+    "frameworks": "Frameworks :",
+    "tools": "Side:",
+    "interests": "Interested in:"
+  },
+  "projects": {
+    "title": "My projects",
+    "languages": "Languages / Frameworks used :",
+    "Website for CrossfitObernai": {
+      "title": "Website for CrossfitObernai",
+      "alt": "Image of Website for CrossfitObernai",
+      "origin": "(Personnal project)",
+      "description": "I developed a dynamic website for a CrossFit box using React for the frontend and NestJS for the backend. The site features a contact form managed by the NestJS backend. The technologies used include HTML, JavaScript, Sass for styling, React for the user interface, and NestJS for handling backend requests. The site is hosted on a VPS server running Ubuntu, where I configured everything, including PM2 for process management and Nginx as the web server."
+    },
+    "Front-end for Kasa": {
+      "title": "Front-end for Kasa",
+      "alt": "Image of Front-end for Kasa",
+      "origin": "(OpenClassroom project)",
+      "description": "Front-end developed with React."
+    },
+    "Back-end for 'Mon Vieux Grimoire'": {
+      "title": "Back-end for 'Mon Vieux Grimoire'",
+      "alt": "Image of Mon Vieux Grimoire",
+      "origin": "(OpenClassroom project)",
+      "description": "Implementation of an API for “Mon Vieux Grimoire”."
+    },
+    "Debug + optimization for Nina Carducci": {
+      "title": "Debug + optimization for Nina Carducci's website",
+      "alt": "Image of Nina Carducci's website",
+      "origin": "(OpenClassroom project)",
+      "description": "Debugging and optimization using Lighthouse and WAVE."
+    },
+    "Front-end for Sophie Bluel": {
+      "title": "Front-end for Sophie Bluel",
+      "alt": "Image of Front-end for Sophie Bluel",
+      "origin": "(OpenClassroom project)",
+      "description": "Javascript discovery."
+    },
+    "Front-end for booki": {
+      "title": "Front-end for booki",
+      "alt": "Image of Front-end for booki",
+      "origin": "(OpenClassroom project)",
+      "description": "HTML / CSS discovery."
+    }
+  },
+  "contact": {
+    "email": "Email Address",
+    "message": "Message",
+    "submit": "Submit",
+    "success": "Message sent, thanks !"
+  },
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
