@@ -101,6 +101,10 @@
       "name": "Website for CrossfitObernai",
       "origin": "(Personal project)",
       "imageURL": "/assets/projects_screenshots/cfo.webp",
+      "GithubLink": [
+        "https://github.com/Crrux/CrossfitObernai",
+        "https://github.com/Crrux/Backend-CFO"
+      ],
       "WebLink": "https://crossfitobernai.com/",
       "description": "I developed a dynamic website for a CrossFit box using React for the frontend and NestJS for the backend. The site features a contact form managed by the NestJS backend. The technologies used include HTML, JavaScript, Sass for styling, React for the user interface, and NestJS for handling backend requests. The site is hosted on a VPS server running Ubuntu, where I configured everything, including PM2 for process management and Nginx as the web server.",
       "used": ["HTML", "CSS", "Javascript", "SASS", "React", "NestJS"]

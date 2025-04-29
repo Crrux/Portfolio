@@ -8,12 +8,15 @@ Modal.setAppElement("#root");
 
 function Project({ project, dataLogos }) {
   const [modalIsOpen, setIsOpen] = useState(false);
+
   function openModal() {
     setIsOpen(true);
   }
+
   function closeModal() {
     setIsOpen(false);
   }
+
   return (
     <>
       <button onClick={openModal} role="button" aria-label="Open Modal for this project" className="Button_ModalProject">
@@ -54,19 +57,42 @@ function Project({ project, dataLogos }) {
                 ""
               )}
               {
-                project.GithubLink ? <a
-                  href={project.GithubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={dataLogos.find((logo) => logo.title === "Github").URL}
-                    className="Modal_Header_LinksContainer_External_GithubLogo"
-                    alt="Github Logo"
-                  />
-                </a> : ''
-              }
+                project.GithubLink && Array.isArray(project.GithubLink) ?
+                  project.GithubLink.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={link}                    >
+                      <img
+                        src={dataLogos.find((logo) => logo.title === "Github").URL}
+                        className="Modal_Header_LinksContainer_External_GithubLogo"
+                        alt="Github Logo"
+                      />
+                    </a>
+                  ))
 
+                  :
+                  ''
+              }
+              {
+                project.GithubLink && typeof project.GithubLink === "string" ?
+                  <a
+                    href={project.GithubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={project.GithubLink}
+                  >
+                    <img
+                      src={dataLogos.find((logo) => logo.title === "Github").URL}
+                      className="Modal_Header_LinksContainer_External_GithubLogo"
+                      alt="Github Logo"
+                    />
+                  </a>
+                  :
+                  ''
+              }
             </div>
 
             <button
