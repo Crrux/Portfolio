@@ -556,12 +556,17 @@ button:active {
     gap: 10px;
   }
 }
+.Modal_Project_Info_Logos {
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .Modal_Project_Info_Logos_Container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
+  gap: 20px;
+  width: 100%;
 }
 .Modal_Project_Info_Description, .Modal_Project_Info_Logos {
   background-color: rgba(5, 4, 4, 0.6901960784);
@@ -647,6 +652,12 @@ button:active {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #root {

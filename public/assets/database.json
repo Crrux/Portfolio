@@ -116,7 +116,7 @@
       "GithubLink": "https://github.com/Crrux/kasa",
       "WebLink": "https://kasa-indol-rho.vercel.app/",
       "description": "Front-end developped with React",
-      "used": ["React", "SASS"]
+      "used": ["HTML", "CSS", "Javascript", "React", "SASS"]
     },
     {
       "name": "Back-end for 'Mon Vieux Grimoire'",
