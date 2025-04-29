@@ -69,6 +69,31 @@
       "title": "TypeScript",
       "alt": "TypeScript logo",
       "URL": "/assets/svg/typescript_logo.svg"
+    },
+    {
+      "title": "Python",
+      "alt": "Python logo",
+      "URL": "/assets/svg/python_logo.svg"
+    },
+    {
+      "title": "Django",
+      "alt": "Django logo",
+      "URL": "/assets/svg/django_logo.svg"
+    },
+    {
+      "title": "Flask",
+      "alt": "Flask logo",
+      "URL": "/assets/svg/flask_logo.svg"
+    },
+    {
+      "title": "TensorFlow",
+      "alt": "TensorFlow logo",
+      "URL": "/assets/svg/tensorflow_logo.svg"
+    },
+    {
+      "title": "PostgreSQL",
+      "alt": "PostgreSQL logo",
+      "URL": "/assets/svg/postgresql_logo.svg"
     }
   ],
   "projects": [

@@ -56,28 +56,28 @@ function Home() {
               <p className='Home_Language_pcontainer_1'>Language :</p>
               <p className='Home_Language_pcontainer_2'>
                 <Logosvg
-                  logos={['HTML', 'CSS', 'Javascript', 'SASS', 'TypeScript']}
+                  logos={['HTML', 'CSS', 'Javascript', 'SASS', 'TypeScript', 'Python']}
                 />
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
               <p className='Home_Language_pcontainer_1'>Frameworks :</p>
               <p className='Home_Language_pcontainer_2'>
-                <Logosvg logos={['ExpressJS', 'React', 'NestJS']} />
+                <Logosvg logos={['ExpressJS', 'React', 'NestJS', 'Django']} />
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
               <p className='Home_Language_pcontainer_1'>Side:</p>
               <p className='Home_Language_pcontainer_2'>
                 <Logosvg
-                  logos={['Git', 'Github', 'mySQL', 'MongoDB', 'NodeJS']}
+                  logos={['Git', 'Github', 'mySQL', 'MongoDB', 'NodeJS', 'PostgreSQL']}
                 />
               </p>
             </div>
             <div className='Home_Language_pcontainer'>
               <p className='Home_Language_pcontainer_1'>Interested in:</p>
               <p className='Home_Language_pcontainer_2'>
-                <Logosvg logos={['NextJS']} />
+                <Logosvg logos={['NextJS', "Flask", "TensorFlow"]} />
               </p>
             </div>
           </div>

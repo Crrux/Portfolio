@@ -8,11 +8,23 @@
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 5px;
 }
 @media screen and (max-width: 767.98px) {
   .Header {
     font-size: 10px;
     width: 100%;
+  }
+}
+.Header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767.98px) {
+  .Header h1 {
+    font-size: 15px;
   }
 }
 .Header_nav {
@@ -119,6 +131,7 @@
   width: 40%;
   flex-grow: 1;
   margin: auto;
+  align-items: center;
 }
 @media screen and (max-width: 1150px) {
   .Home_Language_pcontainer {
@@ -132,6 +145,7 @@
 }
 @media screen and (min-width: 1150px) and (max-width: 1315px) {
   .Home_Language_pcontainer {
+    align-items: flex-start;
     flex-direction: column;
     flex-grow: 0;
   }

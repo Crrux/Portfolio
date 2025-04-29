@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="Header">
-      <p>MURSCH Arthur</p>
+      <h1>Portfolio Mursch Arthur</h1>
       <nav className="Header_nav">
         <Link
           to={"/"}
