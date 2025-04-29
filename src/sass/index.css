@@ -27,6 +27,11 @@
     font-size: 15px;
   }
 }
+.Header > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .Header_nav {
   display: flex;
   align-items: center;
@@ -77,11 +82,16 @@
 .Header_langage_container #langage {
   z-index: 9999;
   all: unset;
-  width: 45px;
+  width: 50px;
   cursor: pointer;
 }
+@media screen and (max-width: 767.98px) {
+  .Header_langage_container #langage {
+    width: 25px;
+  }
+}
 .Header_langage_container #langage img {
-  width: 45px;
+  width: 100%;
 }
 
 .Home {

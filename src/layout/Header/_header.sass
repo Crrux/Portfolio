@@ -19,6 +19,10 @@
         font-weight: 700
         @media screen and ( max-width: $layout-breakpoint-small )
             font-size: 15px
+    >div
+        display: flex
+        align-items: center
+        gap: 10px
     &_nav
         display: flex
         align-items: center
@@ -55,9 +59,9 @@
             #langage
                 z-index: 9999
                 all: unset
-                width: 45px
+                width: 50px
                 cursor: pointer
-                &:hover
-
+                @media screen and ( max-width: $layout-breakpoint-small )
+                    width: 25px
                 img
-                    width: 45px
+                    width: 100%
