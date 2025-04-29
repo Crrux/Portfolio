@@ -57,9 +57,10 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 .Home_Presentation_Container {
-  min-height: 90vh;
+  min-height: 95dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +107,7 @@
 @media screen and (max-width: 767.98px) {
   .Home_Presentation_Photo {
     margin: 0;
-    width: 80%;
+    width: 100%;
   }
 }
 .Home_Presentation_Text {
