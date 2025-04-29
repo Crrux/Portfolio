@@ -36,3 +36,28 @@
             width: 50px
             @media screen and ( max-width: $layout-breakpoint-small )
                 width: 25px
+    .active
+        display: flex
+    &_langage
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        flex-direction: column
+        display: none
+        width: 60px
+        button
+            all: unset
+            cursor: pointer
+            @media screen and ( max-width: $layout-breakpoint-small )
+                font-size: 1.5rem
+        &_container
+            position: relative
+            #langage
+                z-index: 9999
+                all: unset
+                width: 45px
+                cursor: pointer
+                &:hover
+
+                img
+                    width: 45px

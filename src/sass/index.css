@@ -51,6 +51,38 @@
     width: 25px;
   }
 }
+.Header .active {
+  display: flex;
+}
+.Header_langage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  display: none;
+  width: 60px;
+}
+.Header_langage button {
+  all: unset;
+  cursor: pointer;
+}
+@media screen and (max-width: 767.98px) {
+  .Header_langage button {
+    font-size: 1.5rem;
+  }
+}
+.Header_langage_container {
+  position: relative;
+}
+.Header_langage_container #langage {
+  z-index: 9999;
+  all: unset;
+  width: 45px;
+  cursor: pointer;
+}
+.Header_langage_container #langage img {
+  width: 45px;
+}
 
 .Home {
   display: flex;

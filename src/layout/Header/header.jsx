@@ -3,9 +3,14 @@ import { useTranslation } from 'react-i18next';
 
 import { Link, useLocation } from "react-router-dom";
 
+import lgelogo from "/assets/svg/language.svg";
+import { useState } from "react";
+
 function Header() {
+  const [isActive, setIsActive] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <header className="Header">
@@ -37,6 +42,42 @@ function Header() {
           />
         </a>
       </nav>
+      <div className="Header_langage_container">
+        <button
+          id="langage"
+          type="button"
+          onClick={() => setIsActive(!isActive)}
+          onMouseOver={() => setIsVisible(true)}
+          onMouseLeave={() => setIsVisible(false)}
+        >
+          <img src={lgelogo} alt="Language Selector" />
+        </button>
+        <div className={`Header_langage ${isActive || isVisible ? "active" : ""}`}
+          onMouseOver={() => setIsVisible(true)}
+          onMouseLeave={() => setIsVisible(false)}>
+          <button
+            className="Header_langage_button"
+            onClick={() => {
+              i18n.changeLanguage("fr")
+              setIsActive(false)
+              setIsVisible(false)
+            }}
+
+          >
+            🇫🇷
+          </button>
+          <button
+            className="Header_langage_button"
+            onClick={() => {
+              i18n.changeLanguage("en")
+              setIsActive(false)
+              setIsVisible(false)
+            }}
+          >
+            🇬🇧
+          </button>
+        </div>
+      </div>
     </header>
   );
 }
