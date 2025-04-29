@@ -144,6 +144,12 @@
 }
 .Home_Presentation_Text {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Home_Presentation_Text h1 {
+  margin-bottom: 10px;
 }
 .Home_Language {
   padding: 10px;
