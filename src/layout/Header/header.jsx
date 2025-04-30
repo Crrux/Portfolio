@@ -59,6 +59,16 @@ function Header() {
             <button
               className="Header_langage_button"
               onClick={() => {
+                i18n.changeLanguage("en")
+                setIsActive(false)
+                setIsVisible(false)
+              }}
+            >
+              🇬🇧
+            </button>
+            <button
+              className="Header_langage_button"
+              onClick={() => {
                 i18n.changeLanguage("fr")
                 setIsActive(false)
                 setIsVisible(false)
@@ -66,16 +76,6 @@ function Header() {
 
             >
               🇫🇷
-            </button>
-            <button
-              className="Header_langage_button"
-              onClick={() => {
-                i18n.changeLanguage("en")
-                setIsActive(false)
-                setIsVisible(false)
-              }}
-            >
-              🇬🇧
             </button>
           </div>
         </div>
